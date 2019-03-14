@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: 'https://www.seo-bird.com',
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-sitemap`,
