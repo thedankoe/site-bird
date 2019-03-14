@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.seo-bird.com',
+    siteUrl: 'https://www.site-bird.com',
   },
   plugins: [
     {
@@ -26,7 +26,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-135459641-1',
+        trackingId: 'UA-136229895-1',
         head: false,
         respectDNT: true,
       },
