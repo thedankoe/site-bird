@@ -17,7 +17,7 @@ const NavWrapper = styled.div`
 `
 
 const NavContainer = styled.nav`
-  width: 50%;
+  width: 30%;
   margin: 0 3rem 0 auto;
 `
 
@@ -33,7 +33,7 @@ const LogoImg = styled.img`
 
 const NavList = styled.ul`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
 `
@@ -162,9 +162,6 @@ class Nav extends Component {
                 <LogoImg src={NavLogo} alt="SiteBird logo" />
               </Logo>
               <NavItem>
-                <Link to="/services">Our Websites</Link>
-              </NavItem>
-              <NavItem>
                 <Link to="/faq">FAQ</Link>
               </NavItem>
               <NavItem>
@@ -188,9 +185,6 @@ class Nav extends Component {
                   </NavToggle>
                   {on && (
                     <NavToggleList on={on} toggle={toggle}>
-                      <NavToggleItem>
-                        <Link to="/services">Our Websites</Link>
-                      </NavToggleItem>
                       <NavToggleItem>
                         <Link to="/faq">FAQ</Link>
                       </NavToggleItem>

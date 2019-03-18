@@ -125,7 +125,7 @@ const Header = ({ location, headerText, headerSub }) => (
                   Extremely fast, optimized, and affordable.
                 </HeaderSubHeading>
               </HeaderHeadingHome>
-              <HeaderLink to="/services">
+              <HeaderLink to="/#packages">
                 Start Now
                 <DownIcon />
               </HeaderLink>

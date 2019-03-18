@@ -10,9 +10,13 @@ import BlogSection from '../components/blogSection'
 const IndexPage = ({ location }) => (
   <>
     <Helmet
-      title="Conversion Centered Websites for Small Businesses"
+      title="Conversion Centered Websites for Small Businesses | SiteBird"
       meta={[
-        { name: 'description', content: 'Sample' },
+        {
+          name: 'description',
+          content:
+            'Affordable, tested websites for local and small businesses. Our websites come fully optimized, you will never need to hire anyone to work on your website again.',
+        },
         { name: 'keywords', content: 'sample, something' },
       ]}
     >

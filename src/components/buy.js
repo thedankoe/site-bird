@@ -51,18 +51,18 @@ export const BuySubHeading = styled(SubHeadingStyleLight)`
 `
 
 const Buy = () => (
-  <BuyWrapper>
+  <BuyWrapper id="packages">
     <BuyContainer>
       <HeadingStyleLight>Get started</HeadingStyleLight>
       <BuySubHeading>
-        Our packages are value based, we do work according to the price of the
-        package each month. This keeps them streamlined, effective, and
-        affordable.
+        We offer two website packages: a single page website and a multi-page
+        website. Both website styles are beautiful, optimized, and convert.
       </BuySubHeading>
       <ParagraphStyleLight>
-        Our services are scalable. Interested in faster growth?{' '}
-        <ColoredLink to="/contact">Contact us</ColoredLink> for a custom
-        package.
+        These packages provide exactly what your small business needs; a
+        beautiful, optimized, and fast website that converts. If you think your
+        website will need more functionality,{' '}
+        <ColoredLink to="/contact">contact us</ColoredLink>.
       </ParagraphStyleLight>
       <ServicesCard />
       <ProblemLink to="/contact">

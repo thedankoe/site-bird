@@ -1,20 +1,20 @@
 import React from 'react'
 import { CheckoutButton } from './styles/TextStyles'
 
-const CheckoutPackage = class extends React.Component {
+const CheckoutSku = class extends React.Component {
   componentDidMount() {
-    this.stripe = window.Stripe('pk_live_tUH1wM8GGUIsI22trDRHJ4tv', {
+    this.stripe = window.Stripe('pk_test_72FFEEfY0jpJ2euL6aEJ5Qrl', {
       betas: ['checkout_beta_4'],
     })
   }
 
   async redirectToCheckout(event) {
-    const { plan } = this.props
+    const { sku } = this.props
     event.preventDefault()
     const { error } = await this.stripe.redirectToCheckout({
-      items: [{ plan, quantity: 1 }],
-      successUrl: `https://www.seo-bird.com/checkout-success/`,
-      cancelUrl: `https://www.seo-bird.com/`,
+      items: [{ sku, quantity: 1 }],
+      successUrl: `https://www.site-bird.com/checkout-success/`,
+      cancelUrl: `https://www.site-bird.com/`,
     })
 
     if (error) {
@@ -34,4 +34,4 @@ const CheckoutPackage = class extends React.Component {
   }
 }
 
-export default CheckoutPackage
+export default CheckoutSku

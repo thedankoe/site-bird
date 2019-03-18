@@ -89,7 +89,7 @@ const ContactForm = () => (
     <FormStyle
       name="contact"
       method="POST"
-      action="https://mailthis.to/dan-seo-bird"
+      action="https://mailthis.to/site-bird-email"
     >
       <input
         type="hidden"
@@ -144,13 +144,11 @@ const ContactForm = () => (
       </FormGroup>
       <SelectBox
         items={[
-          { value: 'Standard SEO', id: 1 },
-          { value: 'Premium SEO', id: 2 },
-          { value: 'Standard Website', id: 3 },
-          { value: 'Premium Website', id: 4 },
-          { value: 'Custom Package', id: 5 },
+          { value: 'Single Page Website', id: 1 },
+          { value: 'Multi Page Website', id: 2 },
+          { value: 'Contract Information', id: 3 },
+          { value: 'Custom Website Package', id: 4 },
           { value: 'Referrals', id: 6 },
-          { value: 'Cancelling Services', id: 7 },
         ]}
       />
       <FormGroup>

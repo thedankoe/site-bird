@@ -8,7 +8,6 @@ import {
   ZoomIcon,
   PencilIcon,
   TargetIcon,
-  SocialIcon,
   SpeedIcon,
 } from './styles/IconStyles'
 

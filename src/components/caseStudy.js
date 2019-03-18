@@ -58,6 +58,21 @@ const ParagraphContainer = styled.div`
   @media ${device.tablet} {
     text-align: center;
   }
+
+  @media ${device.tabletS} {
+    text-align: left;
+  }
+
+  a {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: ${props => props.theme.CTA};
+    transition: all ease 0.3s;
+
+    :hover {
+      color: ${props => props.theme.CTAHover};
+    }
+  }
 `
 
 const CaseList = styled.ul`
@@ -65,6 +80,13 @@ const CaseList = styled.ul`
   color: ${props => props.theme.primaryLight};
   font-size: 2.2rem;
   font-weight: 500;
+
+  li {
+    span {
+      font-weight: 700;
+      color: ${props => props.theme.secondary};
+    }
+  }
 `
 
 const CaseParagraph = styled(ParagraphStyle)`
@@ -78,22 +100,36 @@ const CaseStudy = () => (
     query={CASE_STUDY_QUERY}
     render={data => (
       <CaseWrapper>
-        <HeadingStyle>Local SEO HGB Construction case study</HeadingStyle>
+        <HeadingStyle>Conversion Optimization Case Studies</HeadingStyle>
         <CaseContainer>
           <CaseImage fluid={data.file.childImageSharp.fluid} />
           <ParagraphContainer>
-            <SubHeadingStyle>Services Provided</SubHeadingStyle>
+            <SubHeadingStyle>
+              Website optimization in all areas increases conversion rates
+              exponentially, heres some key points:
+            </SubHeadingStyle>
             <CaseList>
-              <li>Website creation</li>
-              <li>Mobile optimization</li>
-              <li>SEO citation building</li>
-              <li>Content writing</li>
+              <li>
+                More prominent call to action - <span>591% increase</span>
+              </li>
+              <li>
+                Updated design - <span>33% increase</span>
+              </li>
+              <li>
+                Adding testimonials - <span>34% increase</span>
+              </li>
+              <li>
+                Video for email signups - <span>100% increase</span>
+              </li>
             </CaseList>
+            <a href="https://neilpatel.com/blog/100-conversion-optimization-case-studies/">
+              View More
+            </a>
             <CaseParagraph>
-              HGB's ranking boosted to number 1 for multiple keywords, they were
-              able to grow from one to four employees in under one year. With
-              tailored SEO services that were projected to work, there wasn't a
-              need for expensive consulting or unnecessary services.
+              Optimization in all areas increases conversion rates across the
+              board. Optimizing your website, or having a website built with
+              optimization in mind, is important now more than ever with the
+              amount of competition online.
             </CaseParagraph>
           </ParagraphContainer>
         </CaseContainer>

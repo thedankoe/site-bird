@@ -4,7 +4,6 @@ import {
   HeadingStyle,
   SubHeadingStyle,
   ParagraphStyle,
-  ColoredLink,
 } from './styles/TextStyles'
 import { device } from './styles/MediaQueries'
 

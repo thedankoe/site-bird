@@ -1,5 +1,8 @@
 module.exports = {
   siteMetadata: {
+    title: `SiteBird`,
+    description: `Affordable, tested websites for local and small businesses. Our websites come fully optimized, you will never need to hire anyone to work on your website again.`,
+    author: `Dan Koe`,
     siteUrl: 'https://www.site-bird.com',
   },
   plugins: [

@@ -12,7 +12,6 @@ import { device } from '../components/styles/MediaQueries'
 import Buy from '../components/buy'
 import ServicesSection from '../components/servicesSection'
 import { EmailIcon, RightIcon } from '../components/styles/IconStyles'
-import FBGroup from '../components/fbGroup'
 
 export const MarketingPageHeading = styled(HeadingStyle)`
   width: ${props => props.theme.maxWidth};
@@ -138,7 +137,7 @@ const BestServiceWrapper = styled.div`
   }
 `
 
-const MarketingSolutionsPage = ({ location }) => (
+const OurWebsitesPage = ({ location }) => (
   <>
     <Helmet
       title="Local Marketing Services for Small Businesses at an Affordable Price"
@@ -211,4 +210,4 @@ const MarketingSolutionsPage = ({ location }) => (
   </>
 )
 
-export default MarketingSolutionsPage
+export default OurWebsitesPage

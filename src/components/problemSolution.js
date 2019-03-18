@@ -7,9 +7,10 @@ import {
   ProblemLink,
   HeadingStyleLight,
 } from './styles/TextStyles'
-import { CheckMark, RightIcon, CrossIcon } from './styles/IconStyles'
+import { RightIcon, CrossIcon } from './styles/IconStyles'
 import LeadSection from './leadSection'
 import InfoSection from './infoSection'
+import PrismTexture from '../images/prism-texture.png'
 
 const ProblemWrapper = styled.div`
   width: ${props => props.theme.maxWidth};
@@ -37,11 +38,7 @@ const WrapperBlue = styled.div`
   width: 100%;
   margin: 0;
   padding: ${props => props.theme.textSpace} 0;
-  background: linear-gradient(
-    to right bottom,
-    ${props => props.theme.primaryLight},
-    ${props => props.theme.primary}
-  );
+  background-image: url(${PrismTexture});
   color: #fff;
 
   h2 {
@@ -95,6 +92,11 @@ const ParagraphBlueBold = styled(ParagraphStyle)`
   margin: ${props => props.theme.textSpace} 0;
   font-weight: 500;
   text-align: center;
+
+  @media ${device.tabletS} {
+    width: 95%;
+    margin: ${props => props.theme.textSpace} auto;
+  }
 `
 
 const ProblemList = styled.ul`
@@ -203,11 +205,11 @@ const ProblemSolution = () => (
       <HeadingStyleLight>How we can help</HeadingStyleLight>
       <InfoSection />
       <ParagraphBlueBold>
-        Our services get your business on the map and keep it there. Not
-        convinced yet?
+        Our websites come completely optimized. You will never have to hire
+        anyone again.
       </ParagraphBlueBold>
-      <ProblemLink to="/services">
-        Detail on our services
+      <ProblemLink to="/websites">
+        Detail on our websites
         <RightIcon />
       </ProblemLink>
     </WrapperBlue>

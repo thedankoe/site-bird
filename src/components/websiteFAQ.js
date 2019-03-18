@@ -59,7 +59,7 @@ const WebsiteFAQ = () => (
       All credible local businesses have effective websites that showcase their
       amazing products and it results in more customers and higher profits.
     </MarketingEndParagraph>
-    <ServicesWebsiteLink to="/services/website">
+    <ServicesWebsiteLink to="/#packages">
       Website Packages
       <RightIcon />
     </ServicesWebsiteLink>

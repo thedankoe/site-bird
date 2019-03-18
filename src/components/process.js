@@ -34,7 +34,11 @@ export const ProcessList = styled.ol`
 export const ProcessListContainer = styled.div`
   width: 70%;
   padding: 1.5rem 3rem;
-  background: rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    to right bottom,
+    rgba(27, 179, 232, 0.9),
+    rgba(3, 89, 117, 0.9)
+  );
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -59,9 +63,11 @@ export const ProcessListItem = styled.li`
   text-align: left;
   font-size: 2.5rem;
   font-weight: 600;
+  color: #fff;
   span {
     font-size: 2.2rem;
     font-weight: 500;
+    color: ${props => props.theme.lightestGrey};
     display: block;
   }
 `
@@ -69,15 +75,15 @@ export const ProcessListItem = styled.li`
 export const ProcessListIcon = styled(PencilIcon)`
   font-size: 3rem;
   margin-right: 3rem;
+  fill: #fff;
 `
 
 const Process = () => (
   <ProcessWrapper>
     <HeadingStyle>Our process</HeadingStyle>
     <ParagraphStyle>
-      Our team is comprised of experts in all of the services explained above,
-      once a package or individual service is purchased we get to work right
-      away. The sooner we get started the faster your growth starts.
+      We offer different website packages to suit your businesses needs. Once a
+      package is purchased, this is how you can expect the process to go:
     </ParagraphStyle>
     <ProcessList>
       <ProcessListContainer>
@@ -89,7 +95,7 @@ const Process = () => (
           <span>
             A package is purchased, you will be redirected to a form to give us
             all of the information regarding your business. You will be emailed
-            a receipt and contract to sign within 48 hours.
+            a receipt and a separate contract to sign within 48 hours.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -100,9 +106,9 @@ const Process = () => (
         <ProcessListItem>
           Step 2
           <span>
-            Our team will immediately start analysing your website and social
-            media. We prioritize areas that will affect SEO the most and work on
-            optimizing them.
+            We start wireframing and prototyping, this is done throughout the
+            first week. Within that week you will be emailed to approve the
+            design. If you purchased a theme or template, skip this step.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -113,9 +119,9 @@ const Process = () => (
         <ProcessListItem>
           Step 3
           <span>
-            We start researching keywords and what your competitors are doing
-            right and wrong, we correct the mistakes and start creating content
-            targeted towards interested customers.
+            We start building, a temporary link will be sent to you so you can
+            see the websites progress. Questions and concerns should wait until
+            the last week when we are fine tuning.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -126,31 +132,18 @@ const Process = () => (
         <ProcessListItem>
           Step 4
           <span>
-            We produce content articles to ensure organic growth and create
-            landing pages for promotions and email collection. We then start
-            adjusting our strategy according to reported analytics.
-          </span>
-        </ProcessListItem>
-      </ProcessListContainer>
-      <ProcessListContainer>
-        <div>
-          <ProcessListIcon />
-        </div>
-        <ProcessListItem>
-          Step 5
-          <span>
-            Fine tune and repeat, we send monthly ROI reports for all packages
-            and checklists for consulting packages to you. Best results are
-            noticed near the 6 month mark.
+            The website is <em>normally</em> completed within the first month of
+            the contract. We are on call for updates and fixes for the length of
+            the contract.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
     </ProcessList>
     <HeadingStyle>Money Back Guarentee</HeadingStyle>
     <ParagraphStyle>
-      If you aren't satisfied with your growth in the first month we give you
-      your money back. SEO takes well over a month to see long term growth but
-      we are confident you will love our services.
+      If you are unhappy with our services within the first 2 weeks of purchase,
+      you get a money back guarentee. No questions asked. We use this as a
+      benchmark, our products should be of immense value to your business.
     </ParagraphStyle>
   </ProcessWrapper>
 )

@@ -7,7 +7,6 @@ import {
   SubHeadingStyle,
   ParagraphStyle,
   HeaderLinkStyle,
-  ColoredLink,
 } from './styles/TextStyles'
 
 export const CardContainer = styled.div`
@@ -87,93 +86,97 @@ export const CardLink = styled(HeaderLinkStyle)`
 const ServicesCard = () => (
   <CardContainer>
     <Card>
-      <HeadingStyle>Standard</HeadingStyle>
+      <HeadingStyle>Single Page</HeadingStyle>
       <SubHeadingStyle>
-        Affordable SEO consulting for businesses that want to test if SEO will
-        work for them.
+        Perfect for businesses that want to get their point across and get
+        customers to buy. Common for new businesses.
       </SubHeadingStyle>
-      <CardParagraph>$399/month</CardParagraph>
-      <ParagraphStyle>
-        Month to Month - <span>Done With You</span>
-      </ParagraphStyle>
+      <CardParagraph>$299 flat fee</CardParagraph>
+      <ParagraphStyle>Or</ParagraphStyle>
+      <CardParagraph>$89/month</CardParagraph>
+      <ParagraphStyle>6 month contract</ParagraphStyle>
       <CardList>
         <li>
           <div>
             <CheckMark />
           </div>
-          Problems that will impact growth the most when fixed are prioritized
+          Optimized for SEO, mobile, usability, and accessability.
         </li>
         <li>
           <div>
             <CheckMark />
           </div>
-          A descriptive monthly checklist with prioritized actions and how to
-          implement them
+          Designed for you business. Includes an email capture input and contact
+          form.
         </li>
         <li>
           <div>
             <CheckMark />
           </div>
-          Content article ideas, social media strategy, and website optimization
+          Includes most aspects of a multi-page site organized on a single page
+          that flows well.
         </li>
         <li>
           <div>
             <CheckMark />
           </div>
-          A monthly strategy and ROI report describing how we plan to continue
-          growth
+          Very popular with new businesses, in some circumstances single page
+          sites convert more.
         </li>
         <li>
           <div>
             <CheckMark />
           </div>
-          Access to your project on Notion to keep an eye on our progress
+          Invitation to a private Slack channel, we update you on the websites
+          progress.
         </li>
       </CardList>
-      <CardLink to="/services/standard">Learn More</CardLink>
+      <CardLink to="/websites/single-page">Learn More</CardLink>
     </Card>
     <Card>
-      <HeadingStyle>Premium</HeadingStyle>
+      <HeadingStyle>Multi Page</HeadingStyle>
       <SubHeadingStyle>
-        For businesses that are tight on time that want the most return on
-        investment.
+        Maximum 6 pages. For businesses that want the full website experience.
+        Common for established businesses.
       </SubHeadingStyle>
-      <CardParagraph>$799/month</CardParagraph>
-      <ParagraphStyle>
-        Month to Month - <span>Done For You</span>
-      </ParagraphStyle>
+      <CardParagraph>$999 flat fee</CardParagraph>
+      <ParagraphStyle>Or</ParagraphStyle>
+      <CardParagraph>$199/month</CardParagraph>
+      <ParagraphStyle>6 month contract</ParagraphStyle>
       <CardList>
         <li>
           <div>
             <CheckMark />
           </div>
-          Problems that will impact growth the most when fixed are prioritized
+          Optimized for SEO, mobile, usability, and accessability.
         </li>
         <li>
           <div>
             <CheckMark />
           </div>
-          We do the work for you, you sit back and enjoy your online growth
+          Designed for you business. Includes an email capture input and contact
+          form.
         </li>
         <li>
           <div>
             <CheckMark />
           </div>
-          Weekly content writing, citation building, and copywriting for all
-          pages included
+          Up to 5 custom pages plus the home page. Fast transitions with small
+          load time.
         </li>
         <li>
           <div>
             <CheckMark />
           </div>
-          A monthly strategy and ROI report describing how we plan to continue
-          growth
+          Popular with established businesses looking for a redesign or a new
+          website all together.
         </li>
         <li>
           <div>
             <CheckMark />
           </div>
-          Access to your project on Notion to keep an eye on our progress
+          Invitation to a private Slack channel, we update you on the websites
+          progress.
         </li>
       </CardList>
       <CardLink to="/services/premium">Learn More</CardLink>

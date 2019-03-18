@@ -66,62 +66,55 @@ const FAQPage = ({ location }) => (
     <Layout
       location={location}
       headerText="Frequently Asked Questions"
-      headerSub="For small businesses looking for affordable online marketing"
+      headerSub="For small businesses looking for an optimized website"
     >
       <FAQWrapper>
-        <HeadingStyle>Your online marketing questions answered</HeadingStyle>
+        <HeadingStyle>Your website questions answered</HeadingStyle>
         <FAQContainer>
           <div>
             <UltraSubHeadingStyle>
-              Is there a contract for packages?
+              How do your websites stand out from others?
             </UltraSubHeadingStyle>
             <ParagraphStyle>
-              All of our website and SEO packages have contracts. For our month
-              to month package, the contract is there to lay out and agree to
-              the work we are providing you. You can cancel this package at any
-              time.
+              Firstly, we use a new language that most people are not using. It
+              is called Gatsby.js and will be extremely popular in the coming
+              years, more popular than it already is. It outputs a website that
+              loads EXTREMELY fast out of the box.
             </ParagraphStyle>
             <FAQParagraph>
-              The premium package and website creation packages are all 6 month
-              contracts. Once a package is purchased you will receive an email
-              within 48 hours to electronically read and sign the contract.
+              Our team has specializations in usability and SEO, not just web
+              development. We optimize your website for all of these.
             </FAQParagraph>
           </div>
           <div>
             <UltraSubHeadingStyle>
-              What if I just want a website?
+              How do you keep prices so low?
             </UltraSubHeadingStyle>
             <ParagraphStyle>
-              We offer{' '}
-              <ColoredLink to="/services/website">
-                standalone websites
-              </ColoredLink>{' '}
-              for a low monthly fee on a 6 month contract. We undertand that
-              business owners enjoy a smaller monthly payment rather than a lump
-              sum. If you are interested in paying a one time fee{' '}
-              <ColoredLink to="/contact">contact us</ColoredLink>.
+              If you're wondering if this is an issue with quality, it is not.
+              We never plan to sacrifice quality no matter the price. We want
+              every small business to be able to have an amazing website while
+              being able to save some money.
             </ParagraphStyle>
             <FAQParagraph>
-              Depending on what your businesses needs are, we offer packages for
-              single page websites, landing pages, and complete functional
-              websites tailored to your business.
+              We have streamlined processes in place that make development for
+              small businesses much quicker than other companies, without
+              sacrificing quality of course.
             </FAQParagraph>
           </div>
           <div>
             <UltraSubHeadingStyle>
-              Do you create WordPress sites?
+              Do you create WordPress / Wix / Squarespace sites?
             </UltraSubHeadingStyle>
             <ParagraphStyle>
-              We create websites based on your businesses needs. If your
-              business would thrive with a WordPress site then we are inclined
-              to create the best WordPress site suited to you.
+              We do not. All of these platforms have a place, but they also make
+              it difficult to have the fastest load times while being optimized.
             </ParagraphStyle>
             <FAQParagraph>
-              Our functional website package provides the ability to change
-              content on your own. If we see it necessary to do this, we will
-              give you access to add or subtract content although we do not
-              advise it. Our content strategist is in charge of putting the most
-              relevant content on your website.
+              We do offer a content management system (Contentful) during
+              checkout if you want the ability to manually edit your website.
+              This may be competely unnecessary for your needs, it can be added
+              on at any time down the road.
             </FAQParagraph>
           </div>
           <div>
@@ -140,36 +133,36 @@ const FAQPage = ({ location }) => (
             </FAQParagraph>
           </div>
           <div>
-            <UltraSubHeadingStyle>Do you offer PPC ads?</UltraSubHeadingStyle>
+            <UltraSubHeadingStyle>
+              What if I have a higher budget?
+            </UltraSubHeadingStyle>
             <ParagraphStyle>
-              Google Ads and other PPC ads can be a rabbit hole for local
-              businesses. With that, you may{' '}
-              <ColoredLink to="/contact">contact us</ColoredLink> if you feel it
-              would be right for you. We usually offer Facebook Ads after a
-              package is purchased if we feel like your business would benefit
-              from them.
+              If you are looking for an enterprise level website, our websites
+              aren't for you. We specialize in websites meant to convert for
+              local or small businesses.
             </ParagraphStyle>
             <FAQParagraph>
-              Online advertisements can be great at times but extremely risky at
-              others, we offer them down the road if your business will get
-              value from them.
+              If you are looking for a custom piece of functionality (i.e. an
+              online order form),{' '}
+              <ColoredLink to="/contact">
+                contact us for a personalized website package
+              </ColoredLink>
+              .
             </FAQParagraph>
           </div>
           <div>
             <UltraSubHeadingStyle>
-              Do you offer standalone services?
+              What comes after an optimized website?
             </UltraSubHeadingStyle>
             <ParagraphStyle>
-              Our packages are constructed to get you a great return on your
-              investment and priced accordingly. If you are already having
-              online marketing done for you than{' '}
-              <ColoredLink to="/contact">contact us</ColoredLink> to discuss
-              setting up a standalone service.
+              When we are finished building your website, we give you guidance
+              on the next steps for online marketing. If you would like to
+              continue with us, we recommend at least 6 months of SEO work to
+              organically grow your business.
             </ParagraphStyle>
             <FAQParagraph>
-              The services we provide are extremely important for long term
-              growth. Any of them will help get more customers but are packages
-              provide the most value for price.
+              Our sister agency, <a href="https://www.seo-bird.com">SEOBird</a>{' '}
+              specializes in growing businesses with off-page SEO.
             </FAQParagraph>
           </div>
         </FAQContainer>

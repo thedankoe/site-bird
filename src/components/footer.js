@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { HeadingStyle, ParagraphStyle } from './styles/TextStyles'
+import { ParagraphStyle } from './styles/TextStyles'
 import { device } from './styles/MediaQueries'
-import FooterLogo from '../images/seobird-logo-navigation.png'
+import FooterLogo from '../images/sitebird-logo-navigation.png'
 
 const FooterWrapper = styled.footer`
   width: 100%;
@@ -46,16 +46,16 @@ const FooterLogoStyle = styled.img`
 
 const FooterNavList = styled.ul`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: ${props => props.theme.textSpace};
   list-style: none;
 
   @media ${device.desktop} {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   @media ${device.tablet} {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 `
 
@@ -81,23 +81,20 @@ const Footer = () => (
       <nav>
         <FooterNavList>
           <FooterNavItem>
-            <Link to="/services">Services</Link>
+            <Link to="/websites">Our Websites</Link>
           </FooterNavItem>
           <FooterNavItem>
             <Link to="/faq">FAQ</Link>
           </FooterNavItem>
           <FooterNavItem>
-            <Link to="/about">About</Link>
-          </FooterNavItem>
-          <FooterNavItem>
-            <Link to="/blog">Growth Tips</Link>
+            <Link to="/blog">Blog</Link>
           </FooterNavItem>
           <FooterNavItem>
             <Link to="/contact">Contact Us</Link>
           </FooterNavItem>
         </FooterNavList>
       </nav>
-      <ParagraphStyle>&copy; 2019 SEOBird</ParagraphStyle>
+      <ParagraphStyle>&copy; 2019 SiteBird</ParagraphStyle>
     </FooterContainer>
   </FooterWrapper>
 )

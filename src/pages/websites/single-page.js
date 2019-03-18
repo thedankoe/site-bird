@@ -6,12 +6,13 @@ import {
   HeadingStyle,
   SubHeadingStyle,
   ParagraphStyle,
-  SubHeadingStyleLight,
-  CheckoutLink,
+  HeadingStyleLight,
 } from '../../components/styles/TextStyles'
 import { CheckMark } from '../../components/styles/IconStyles'
 import PackageBG from '../../images/package-buy-bg.jpg'
 import { device } from '../../components/styles/MediaQueries'
+import CheckoutSku from '../../components/checkoutSku'
+import CheckoutPlan from '../../components/checkoutPlan'
 
 export const PackageWrapper = styled.div`
   position: relative;
@@ -47,6 +48,12 @@ export const PackageContainer = styled.div`
 
 export const HowListContainer = styled.div`
   margin: ${props => props.theme.sectionSpace} auto;
+
+  h3 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `
 
 export const HowList = styled.ol`
@@ -85,7 +92,8 @@ export const PackageBuyContainer = styled.div`
   grid-gap: ${props => props.theme.textSpace};
 `
 export const PackageBuyCard = styled.div`
-  margin-bottom: ${props => props.theme.textSpace};
+  width: 70%;
+  margin: 0 auto;
   padding: ${props => props.theme.textSpace};
   background-image: linear-gradient(
       to right bottom,
@@ -98,9 +106,6 @@ export const PackageBuyCard = styled.div`
   color: #fff;
   border-radius: 6px;
   box-shadow: ${props => props.theme.bs};
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-gap: ${props => props.theme.textSpace};
 
   @media ${device.tabletL} {
     padding: 1rem;
@@ -149,113 +154,88 @@ const StandardPage = ({ location }) => (
     </Helmet>
     <Layout
       location={location}
-      headerText="Standard SEO Consulting"
-      headerSub="Monthly actionable guidance sent to your inbox"
+      headerText="Single Page Website"
+      headerSub="Get the point across, get customers buying."
     >
       <PackageWrapper>
-        <HeadingStyle>The perfect SEO starter pack</HeadingStyle>
+        <HeadingStyle>Why a single page website?</HeadingStyle>
         <SubHeadingStyle>
-          Our standard SEO consulting package lets businesses try out SEO and
-          online marketing. There will be noticeable differences in the early
-          stages but SEO shows its best results after 6 months.
+          Single page websites have been growing in popularity recently, even
+          large companies with multiple pages have most of the information you
+          would ever need on their home page.
         </SubHeadingStyle>
         <PackageContainer>
           <div>
-            <SubHeadingStyle>Prioritize your online presence</SubHeadingStyle>
+            <SubHeadingStyle>Focus on the customer</SubHeadingStyle>
             <ParagraphStyle>
-              With the standard SEO package, we send you a monthly gameplan with
-              a prioritized checklist of actionable advice that will most
-              benefit your business. Our checklist is detailed and easy to
-              implement. At the end of each month we send a monthly ROI report
-              showing our successes and our strategy for the coming months.
+              A customer came to your website because they are interested in
+              buying a service or product. Having everything they need on one
+              page will only increase their chances of buying. Then, it's up to
+              your website to convert.
             </ParagraphStyle>
           </div>
           <div>
-            <SubHeadingStyle>Focus more on whats working</SubHeadingStyle>
+            <SubHeadingStyle>Centralize your information</SubHeadingStyle>
             <ParagraphStyle>
-              Every business has different needs, everyone knows this. Some SEO
-              tactics won't work at times even when they are expected to work,
-              freelancers and agencies that don't admit this should not be
-              trusted. We focus on whats working and refactor what isn't, this
-              results in long term growth.
+              One page is more than enough to display the information you need.
+              Most websites have a jumble of information that is either not
+              targeted, or useless in having customers buy from you. Let your
+              website display what custoemrs want.
             </ParagraphStyle>
           </div>
         </PackageContainer>
         <HowListContainer>
-          <HeadingStyle>How it works</HeadingStyle>
+          <HeadingStyle>Benefits of single page websites</HeadingStyle>
           <HowList>
             <HowListItem>
-              We analyze your website and tell you exactly how to fix high
-              priority problems
+              Customers only have one place to go and one place to buy
             </HowListItem>
             <HowListItem>
-              We do the market research and find article ideas that will convert
+              You will only have to worry about ranking for targeted content
+              (SEO blog posts)
             </HowListItem>
             <HowListItem>
-              We give you detailed social media posting guidelines that will
-              engage customers
+              More pages can be added at any time, even though it may not be
+              needed
             </HowListItem>
             <HowListItem>
-              We track analytics to see where we are growing and where we need
-              to improve
-            </HowListItem>
-            <HowListItem>
-              All of this is packaged up neatly in a monthly ROI report and sent
-              to your inbox
+              All of you information is in one place, you do not need to send
+              customers to specific pages
             </HowListItem>
           </HowList>
           <SubHeadingStyle>
-            We will consistently touch base via email to check in. Any questions
-            or concerns are gladly welcomed anytime of the month.
+            We touch base weekly with updates on your website, any changes you
+            want to make during this time are implemented.
           </SubHeadingStyle>
         </HowListContainer>
         <PackageBuyWrapper>
-          <HeadingStyle>Start you growth</HeadingStyle>
           <PackageBuyCard>
+            <HeadingStyleLight>Start your growth</HeadingStyleLight>
             <PackageBuyList>
               <PackageBuyPara>Services Included</PackageBuyPara>
               <li>
                 <CheckMark />
-                Advanced SEO &amp; Keyword Research
+                Complete Single Page Website
               </li>
               <li>
                 <CheckMark />
-                Website Analysis &amp; Actionable Advice
+                SEO Optimization
               </li>
               <li>
                 <CheckMark />
-                Usability Testing &amp; Fixes
+                Usability &amp; Heurisitic Testing
               </li>
               <li>
                 <CheckMark />
-                Content Writing Guidelines
+                Accessible to Everyone
               </li>
               <li>
                 <CheckMark />
-                Facebook Page Strategy
-              </li>
-              <li>
-                <CheckMark />
-                Monthly SEO Strategy
-              </li>
-              <li>
-                <CheckMark />
-                Monthly ROI Report
+                Private Lifetime Slack channel
               </li>
             </PackageBuyList>
-            <PackageBuyCTA>
-              <SubHeadingStyleLight>
-                Customers want to find your business, let your website find{' '}
-                <em>them</em>.
-              </SubHeadingStyleLight>
-              <CheckoutLink to="/services/standard-checkout">
-                Continue to Checkout
-              </CheckoutLink>
-              <PackageBuyParaEnd>
-                If you are interested in email marketing, you will be given the
-                option when checking out.
-              </PackageBuyParaEnd>
-            </PackageBuyCTA>
+            <CheckoutPlan plan="plan_EiVlO8yJlW5rHf" />
+            <CheckoutSku sku="sku_EiViG3wxZQUato" />
           </PackageBuyCard>
         </PackageBuyWrapper>
       </PackageWrapper>
