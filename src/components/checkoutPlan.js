@@ -23,12 +23,13 @@ const CheckoutPlan = class extends React.Component {
   }
 
   render() {
+    const { buttonText } = this.props
     return (
       <CheckoutButton
         type="button"
         onClick={event => this.redirectToCheckout(event)}
       >
-        Purchase Package
+        {buttonText}
       </CheckoutButton>
     )
   }

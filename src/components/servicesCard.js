@@ -10,6 +10,7 @@ import {
 } from './styles/TextStyles'
 
 export const CardContainer = styled.div`
+  width: 100%;
   margin: ${props => props.theme.textSpace} 0;
   display: flex;
   justify-content: center;
@@ -44,7 +45,7 @@ export const Card = styled.div`
   }
 
   @media ${device.tabletS} {
-    width: 100%;
+    width: 95%;
   }
 `
 
@@ -127,8 +128,14 @@ const ServicesCard = () => (
           <div>
             <CheckMark />
           </div>
-          Invitation to a private Slack channel, we update you on the websites
-          progress.
+          Ability to add on pages at any time after website completion.
+        </li>
+        <li>
+          <div>
+            <CheckMark />
+          </div>
+          Revisions for 1 month after website completion. We want you to
+          completely satisfied.
         </li>
       </CardList>
       <CardLink to="/websites/single-page">Learn More</CardLink>
@@ -161,8 +168,8 @@ const ServicesCard = () => (
           <div>
             <CheckMark />
           </div>
-          Up to 5 custom pages plus the home page. Fast transitions with small
-          load time.
+          Up to 5 custom pages not including the home page. Fast transitions
+          with small load time.
         </li>
         <li>
           <div>
@@ -175,8 +182,14 @@ const ServicesCard = () => (
           <div>
             <CheckMark />
           </div>
-          Invitation to a private Slack channel, we update you on the websites
-          progress.
+          Ability to add on pages at any time after website completion.
+        </li>
+        <li>
+          <div>
+            <CheckMark />
+          </div>
+          Revisions for 1 month after website completion. We want you to
+          completely satisfied.
         </li>
       </CardList>
       <CardLink to="/services/premium">Learn More</CardLink>

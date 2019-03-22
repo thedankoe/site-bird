@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import { device } from './styles/MediaQueries'
 import {
   HeadingStyle,
@@ -11,6 +13,18 @@ import { RightIcon, CrossIcon } from './styles/IconStyles'
 import LeadSection from './leadSection'
 import InfoSection from './infoSection'
 import PrismTexture from '../images/prism-texture.png'
+
+const PROBLEM_QUERY = graphql`
+  query ProblemQuery {
+    file(relativePath: { eq: "websites-dont-convert.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 const ProblemWrapper = styled.div`
   width: ${props => props.theme.maxWidth};
@@ -31,7 +45,25 @@ const ProblemWrapper = styled.div`
 `
 
 const ProblemContainer = styled.div`
-  padding: ${props => props.theme.textSpace} 0;
+  padding: 0 0 ${props => props.theme.textSpace} 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: ${props => props.theme.textSpace};
+
+  @media ${device.tablet} {
+    grid-template-columns: 1fr;
+  }
+
+  div {
+    p {
+      text-align: left;
+    }
+  }
+`
+
+const ProblemImg = styled(Img)`
+  box-shadow: ${props => props.theme.bs};
+  border-radius: 5px;
 `
 
 const WrapperBlue = styled.div`
@@ -70,7 +102,7 @@ export const ParagraphSecondary = styled(ParagraphStyle)`
   margin-top: ${props => props.theme.textSpace};
   color: ${props => props.theme.secondary};
   font-weight: 500;
-  text-align: center;
+  text-align: left;
 
   @media ${device.tabletS} {
     text-align: left;
@@ -119,7 +151,7 @@ const ProblemList = styled.ul`
   }
 
   @media ${device.tabletS} {
-    width: 95%;
+    width: 100%;
     align-items: flex-start;
   }
 `
@@ -140,80 +172,88 @@ const ProblemListItem = styled.li`
 `
 
 const ProblemSolution = () => (
-  <>
-    <ProblemWrapper>
-      <ProblemContainer>
-        <HeadingStyle>Most websites don't convert</HeadingStyle>
-        <ParagraphStyle>
-          It's a sad truth, web designers focus on designing. Good design
-          doesn't necessarily convert, nor does good design mean your website is
-          optimized for speed, SEO, and usability.
-        </ParagraphStyle>
-        <ParagraphSecondary>
-          When you bring this up to a web designer they will inevitably try to
-          upsell you, offering optimization at an additional cost. When this
-          happens, run away, fast.
-        </ParagraphSecondary>
-      </ProblemContainer>
-    </ProblemWrapper>
-    <WrapperBlue>
-      <ProbContainerBlue>
-        <HeadingStyleLight>
-          Websites aren't meant to look pretty
-        </HeadingStyleLight>
-        <ParagraphBlue>
-          They are meant to convert and bring in customers. Buying a website
-          with a main goal of looking good will only get you so far. Here's what
-          this can lead to:
-        </ParagraphBlue>
-        <ProblemList>
-          <ProblemListItem>
+  <StaticQuery
+    query={PROBLEM_QUERY}
+    render={data => (
+      <>
+        <ProblemWrapper>
+          <HeadingStyle>Most websites don't convert</HeadingStyle>
+          <ProblemContainer>
             <div>
-              <CrossIcon />
+              <ParagraphStyle>
+                It's a sad truth, web designers focus on designing. Good design
+                doesn't necessarily convert, nor does good design mean your
+                website is optimized for speed, SEO, and usability.
+              </ParagraphStyle>
+              <ParagraphSecondary>
+                When you bring this up to a web designer they will inevitably
+                try to upsell you, offering optimization at an additional cost.
+                When this happens, run away, fast.
+              </ParagraphSecondary>
             </div>
-            <span>Hiring someone for SEO optimization</span>
-          </ProblemListItem>
-          <ProblemListItem>
-            <div>
-              <CrossIcon />
-            </div>
-            <span>Hiring someone for usability / accessability</span>
-          </ProblemListItem>
-          <ProblemListItem>
-            <div>
-              <CrossIcon />
-            </div>
-            <span>Buying an entirely new website to continue growth</span>
-          </ProblemListItem>
-          <ProblemListItem>
-            <div>
-              <CrossIcon />
-            </div>
-            <span>Losing contact with your web designer</span>
-          </ProblemListItem>
-          <ProblemListItem>
-            <div>
-              <CrossIcon />
-            </div>
-            <span>Inability to grow past a certain point</span>
-          </ProblemListItem>
-        </ProblemList>
-      </ProbContainerBlue>
-    </WrapperBlue>
-    <LeadSection />
-    <WrapperBlue>
-      <HeadingStyleLight>How we can help</HeadingStyleLight>
-      <InfoSection />
-      <ParagraphBlueBold>
-        Our websites come completely optimized. You will never have to hire
-        anyone again.
-      </ParagraphBlueBold>
-      <ProblemLink to="/websites">
-        Detail on our websites
-        <RightIcon />
-      </ProblemLink>
-    </WrapperBlue>
-  </>
+            <ProblemImg fluid={data.file.childImageSharp.fluid} />
+          </ProblemContainer>
+        </ProblemWrapper>
+        <WrapperBlue>
+          <ProbContainerBlue>
+            <HeadingStyleLight>
+              Websites aren't meant to look pretty
+            </HeadingStyleLight>
+            <ParagraphBlue>
+              They are meant to convert and bring in customers. Buying a website
+              with a main goal of looking good will only get you so far. Here's
+              what this can lead to:
+            </ParagraphBlue>
+            <ProblemList>
+              <ProblemListItem>
+                <div>
+                  <CrossIcon />
+                </div>
+                <span>Hiring someone for SEO optimization</span>
+              </ProblemListItem>
+              <ProblemListItem>
+                <div>
+                  <CrossIcon />
+                </div>
+                <span>Hiring someone for usability/accessability</span>
+              </ProblemListItem>
+              <ProblemListItem>
+                <div>
+                  <CrossIcon />
+                </div>
+                <span>Buying an entirely new website for growth</span>
+              </ProblemListItem>
+              <ProblemListItem>
+                <div>
+                  <CrossIcon />
+                </div>
+                <span>Losing contact with your web designer</span>
+              </ProblemListItem>
+              <ProblemListItem>
+                <div>
+                  <CrossIcon />
+                </div>
+                <span>Inability to grow past a certain point</span>
+              </ProblemListItem>
+            </ProblemList>
+          </ProbContainerBlue>
+        </WrapperBlue>
+        <LeadSection />
+        <WrapperBlue>
+          <HeadingStyleLight>How we can help</HeadingStyleLight>
+          <InfoSection />
+          <ParagraphBlueBold>
+            Our websites come completely optimized. You will never have to hire
+            anyone again.
+          </ParagraphBlueBold>
+          <ProblemLink to="/websites">
+            Detail on our websites
+            <RightIcon />
+          </ProblemLink>
+        </WrapperBlue>
+      </>
+    )}
+  />
 )
 
 export default ProblemSolution

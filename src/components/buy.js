@@ -10,21 +10,31 @@ import {
 } from './styles/TextStyles'
 import ServicesCard from './servicesCard'
 import { RightIcon } from './styles/IconStyles'
+import PrismTexture from '../images/prism-texture.png'
 
 export const BuyWrapper = styled.div`
   padding: ${props => props.theme.textSpace};
-  background: linear-gradient(
-    to right bottom,
-    ${props => props.theme.primaryLight},
-    ${props => props.theme.primary}
-  );
+  background-image: url(${PrismTexture});
   text-align: center;
   color: #fff;
+
+  @media ${device.tabletS} {
+    padding-left: 0;
+    padding-right: 0;
+  }
 `
 
 export const BuyContainer = styled.div`
   width: ${props => props.theme.maxWidth};
   margin: 0 auto;
+
+  @media ${device.desktopL} {
+    width: 80%;
+  }
+
+  @media ${device.desktop} {
+    width: 100%;
+  }
 
   h2 {
     ::after {
@@ -35,14 +45,6 @@ export const BuyContainer = styled.div`
     @media ${device.tabletS} {
       text-align: center;
     }
-  }
-
-  @media ${device.desktopL} {
-    width: 80%;
-  }
-
-  @media ${device.desktop} {
-    width: 100%;
   }
 `
 

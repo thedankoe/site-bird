@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FaRegChartBar } from 'react-icons/fa'
 import {
   HeadingStyle,
   SubHeadingStyle,
@@ -8,81 +9,72 @@ import {
 import { device } from './styles/MediaQueries'
 
 const LeadSectionWrapper = styled.div`
-  width: ${props => props.theme.maxWidth};
-  margin: ${props => props.theme.sectionSpace} auto;
+  position: relative;
+  width: 100%;
+`
 
-  @media ${device.desktop} {
-    width: 80%;
-  }
-
-  @media ${device.laptopL} {
-    width: 95%;
-  }
+const LeadBgIcon = styled(FaRegChartBar)`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: rgba(0, 0, 0, 0.05);
+  font-size: 50rem;
+  transform: translate(-50%, -50%);
 `
 
 const LeadSectionContainer = styled.div`
+  width: ${props => props.theme.maxWidth};
+  margin: 0 auto;
+  padding: ${props => props.theme.sectionSpace} 0;
+
+  @media ${device.tabletL} {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  @media ${device.tablet} {
+    width: 95%;
+    margin: 0 auto;
+  }
+`
+
+const LeadSectionGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: ${props => props.theme.textSpace};
 
-  @media ${device.tabletL} {
-    width: 80%;
-    margin: 0 auto;
+  @media ${device.laptop} {
     grid-template-columns: 1fr;
-  }
-
-  @media ${device.tablet} {
-    width: 95%;
-    margin: 0 auto;
-    grid-template-columns: 1fr;
-  }
-`
-
-const LeadSectionItem = styled.div`
-  :not(:last-child) {
-    margin-right: ${props => props.theme.textSpace};
-  }
-
-  @media ${device.tablet} {
-    margin-right: 0;
-    :not(:last-child) {
-      margin-bottom: ${props => props.theme.textSpace};
-    }
-  }
-
-  @media ${device.tabletL} {
-    text-align: center;
-  }
-
-  @media ${device.tabletS} {
-    text-align: left;
   }
 `
 
 const LeadSection = () => (
   <LeadSectionWrapper>
-    <HeadingStyle>Conversion centered websites guarentee growth</HeadingStyle>
+    <LeadBgIcon />
     <LeadSectionContainer>
-      <LeadSectionItem>
-        <SubHeadingStyle>
-          300% average increase in leads for the first year
-        </SubHeadingStyle>
-        <ParagraphStyle>
-          The point of websites are to convert, we've been over this, but it's
-          extremely important to understand the difference between 'conversion
-          centered' and 'showcase' websites. One has targeted content, one
-          doesn't.
-        </ParagraphStyle>
-      </LeadSectionItem>
-      <LeadSectionItem>
-        <SubHeadingStyle>No targeted content, no customers</SubHeadingStyle>
-        <ParagraphStyle>
-          Targeted content partly optimizes your website for search engines.
-          Without this you will not grow organically, period. Your website is
-          meant to be your best salesman, targeted content helps people find you
-          without you specifically directing them to it.
-        </ParagraphStyle>
-      </LeadSectionItem>
+      <HeadingStyle>Conversion centered websites guarentee growth</HeadingStyle>
+      <LeadSectionGrid>
+        <div>
+          <SubHeadingStyle>
+            300% average increase in leads for the first year
+          </SubHeadingStyle>
+          <ParagraphStyle>
+            The point of websites are to convert, we've been over this, but it's
+            extremely important to understand the difference between 'conversion
+            centered' and 'showcase' websites. One has targeted content, one
+            doesn't.
+          </ParagraphStyle>
+        </div>
+        <div>
+          <SubHeadingStyle>No targeted content, no customers</SubHeadingStyle>
+          <ParagraphStyle>
+            Targeted content partly optimizes your website for search engines.
+            Without this you will not grow organically, period. Your website is
+            meant to be your best salesman, targeted content helps people find
+            you without you specifically directing them to it.
+          </ParagraphStyle>
+        </div>
+      </LeadSectionGrid>
     </LeadSectionContainer>
   </LeadSectionWrapper>
 )

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { device } from './styles/MediaQueries'
 import { HeadingStyle, ParagraphStyle } from './styles/TextStyles'
 import { PencilIcon } from './styles/IconStyles'
+import HoneycombTexture from '../images/honeycomb-texture.png'
 
 const ProcessWrapper = styled.div`
   width: ${props => props.theme.maxWidth};
@@ -34,11 +35,7 @@ export const ProcessList = styled.ol`
 export const ProcessListContainer = styled.div`
   width: 70%;
   padding: 1.5rem 3rem;
-  background: linear-gradient(
-    to right bottom,
-    rgba(27, 179, 232, 0.9),
-    rgba(3, 89, 117, 0.9)
-  );
+  background-image: url(${HoneycombTexture});
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -94,8 +91,8 @@ const Process = () => (
           Step 1
           <span>
             A package is purchased, you will be redirected to a form to give us
-            all of the information regarding your business. You will be emailed
-            a receipt and a separate contract to sign within 48 hours.
+            information on your business and a contract to sign. If you pay in
+            full, the contract is to hold us accountable for our work.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -106,9 +103,9 @@ const Process = () => (
         <ProcessListItem>
           Step 2
           <span>
-            We start wireframing and prototyping, this is done throughout the
-            first week. Within that week you will be emailed to approve the
-            design. If you purchased a theme or template, skip this step.
+            We start building, a temporary link will be sent to you so you can
+            see the progress of the site. Questions, concerns, and revisions are
+            taken care of for a month after the website is finished.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -119,9 +116,9 @@ const Process = () => (
         <ProcessListItem>
           Step 3
           <span>
-            We start building, a temporary link will be sent to you so you can
-            see the websites progress. Questions and concerns should wait until
-            the last week when we are fine tuning.
+            The website is <em>normally</em> completed within a month of
+            purchase. We are on call for small updates and fixes for the length
+            of the contract (if 6 month contract is purchased).
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -132,9 +129,9 @@ const Process = () => (
         <ProcessListItem>
           Step 4
           <span>
-            The website is <em>normally</em> completed within the first month of
-            the contract. We are on call for updates and fixes for the length of
-            the contract.
+            If you love our website (we know you will), we offer a retainer
+            service for website revisions and updates. This will be offered
+            after all of the original work is done.
           </span>
         </ProcessListItem>
       </ProcessListContainer>

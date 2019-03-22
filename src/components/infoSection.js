@@ -49,7 +49,7 @@ const InfoSection = () => (
     <InfoBlock
       icon={<ZoomIcon />}
       heading="On-Page SEO"
-      text="Rank on Google organically and don't pay down the road for these services."
+      text="Rank on Google organically, don't pay for on-page SEO services down the road."
     />
     <InfoBlock
       icon={<TargetIcon />}
