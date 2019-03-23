@@ -60,6 +60,20 @@ export const CheckoutLinkContainer = styled.div`
     width: 100%;
     text-align: center;
   }
+
+  ul {
+    margin: 2rem 0;
+    list-style: none;
+    font-size: 2.2rem;
+    color: ${props => props.theme.lightGrey};
+
+    li {
+      span {
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+  }
 `
 
 export const CheckoutColoredLink = styled(Link)`
@@ -76,17 +90,7 @@ export const CheckoutColoredLink = styled(Link)`
 
 const SingleCheckoutFlatCMS = ({ location }) => (
   <>
-    <Helmet
-      title="Add on Contentful CMS"
-      meta={[
-        {
-          name: 'description',
-          content:
-            'Affordable, tested websites for local and small businesses. Our websites come fully optimized, you will never need to hire anyone to work on your website again.',
-        },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    >
+    <Helmet title="Add on Contentful CMS">
       <html lang="en" />
     </Helmet>
     <Layout location={location} headerText="Content Management System">
@@ -124,12 +128,18 @@ const SingleCheckoutFlatCMS = ({ location }) => (
           <CheckoutLink to="/websites/single-page/single-checkout-flat-cms-articles">
             Add on CMS
           </CheckoutLink>
-          <CheckoutColoredLink to="websites/single-page/single-checkout-monthly-cms-articles">
-            Or pay monthly for $129/month for 6 months
-          </CheckoutColoredLink>
           <CheckoutLink to="/websites/single-page/single-checkout-flat-articles">
             Continue with Purchase
           </CheckoutLink>
+          <ParagraphStyleLight>
+            Current total: <span>$299</span>
+          </ParagraphStyleLight>
+          <ul>
+            <li>
+              <span>Items:</span>
+            </li>
+            <li>Single page website</li>
+          </ul>
         </CheckoutLinkContainer>
       </CheckoutWrapper>
     </Layout>

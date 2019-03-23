@@ -312,7 +312,7 @@ const StandardPage = ({ location }) => (
                   needed
                 </HowListItem>
                 <HowListItem>
-                  All of you information is in one place, you do not need to
+                  All of your information is in one place, you do not need to
                   send customers to specific pages
                 </HowListItem>
               </HowList>

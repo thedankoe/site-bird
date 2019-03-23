@@ -168,8 +168,8 @@ const ServicesCard = () => (
           <div>
             <CheckMark />
           </div>
-          Up to 5 custom pages not including the home page. Fast transitions
-          with small load time.
+          Up to 5 custom pages not including the home or contact page. Fast
+          transitions with small load time.
         </li>
         <li>
           <div>
@@ -192,7 +192,7 @@ const ServicesCard = () => (
           completely satisfied.
         </li>
       </CardList>
-      <CardLink to="/services/premium">Learn More</CardLink>
+      <CardLink to="/websites/multi-page">Learn More</CardLink>
     </Card>
   </CardContainer>
 )

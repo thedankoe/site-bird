@@ -10,10 +10,10 @@ import { HowList, HowListItem, HowListContainer } from '../single-page'
 import {
   CheckoutWrapper,
   CheckoutLinkContainer,
-} from './single-checkout-flat-cms'
-import CheckoutSku from '../../../components/checkoutSku'
+} from '../single-page/single-checkout-flat-cms'
+import CheckoutPlan from '../../../components/checkoutPlan'
 
-const SingleCheckoutFlatCMSArticles = ({ location }) => (
+const MultiCheckoutMonthlyCMSArticles = ({ location }) => (
   <>
     <Helmet title="Add on Content Articles">
       <html lang="en" />
@@ -50,25 +50,25 @@ const SingleCheckoutFlatCMSArticles = ({ location }) => (
         </HowListContainer>
         <CheckoutLinkContainer>
           <ParagraphStyleLight>
-            $200 to add on, <span>$699 total</span>
+            $40/month to add on, <span>$299/month total</span>
           </ParagraphStyleLight>
-          <CheckoutSku
-            sku="sku_EkNnKJmXJfIRqg"
+          <CheckoutPlan
+            plan="plan_EkUltwkM97B1ev"
             buttonText="Add on Content Articles"
           />
-          <CheckoutSku
-            sku="sku_Eji2eabPqp46LZ"
+          <CheckoutPlan
+            plan="plan_EkUktFJ7MmVxaM"
             buttonText="Continue to Checkout"
           />
           <ParagraphStyleLight>
-            Current total: <span>$499</span>
+            Current total: <span>$259/month</span>
           </ParagraphStyleLight>
           <ul>
             <li>
               <span>Items:</span>
             </li>
-            <li>Single page website</li>
-            <li>Contentful CMS</li>
+            <li>Multi page website (6 month)</li>
+            <li>Contentful CMS (6 month)</li>
           </ul>
         </CheckoutLinkContainer>
       </CheckoutWrapper>
@@ -76,4 +76,4 @@ const SingleCheckoutFlatCMSArticles = ({ location }) => (
   </>
 )
 
-export default SingleCheckoutFlatCMSArticles
+export default MultiCheckoutMonthlyCMSArticles

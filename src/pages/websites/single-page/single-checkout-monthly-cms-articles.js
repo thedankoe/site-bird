@@ -4,31 +4,18 @@ import Layout from '../../../components/layout'
 import {
   HeadingStyle,
   SubHeadingStyle,
-  CheckoutLink,
   ParagraphStyleLight,
 } from '../../../components/styles/TextStyles'
 import { HowList, HowListItem, HowListContainer } from '../single-page'
 import {
   CheckoutWrapper,
   CheckoutLinkContainer,
-  CheckoutColoredLink,
 } from './single-checkout-flat-cms'
-import CheckoutSku from '../../../components/checkoutSku'
 import CheckoutPlan from '../../../components/checkoutPlan'
 
 const SingleCheckoutMonthlyCMSArticles = ({ location }) => (
   <>
-    <Helmet
-      title="Add on Content Articles"
-      meta={[
-        {
-          name: 'description',
-          content:
-            'Affordable, tested websites for local and small businesses. Our websites come fully optimized, you will never need to hire anyone to work on your website again.',
-        },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    >
+    <Helmet title="Add on Content Articles">
       <html lang="en" />
     </Helmet>
     <Layout location={location} headerText="Off-page SEO with content articles">
@@ -69,13 +56,20 @@ const SingleCheckoutMonthlyCMSArticles = ({ location }) => (
             plan="plan_EkNwL7bEgiSDUe"
             buttonText="Add on Content Articles"
           />
-          <CheckoutColoredLink to="/websites/single-page/single-checkout-flat-cms-articles">
-            Or pay $699 as a flat charge
-          </CheckoutColoredLink>
           <CheckoutPlan
             plan="plan_EkNuBeSMjlmid6"
             buttonText="Continue to Checkout"
           />
+          <ParagraphStyleLight>
+            Current total: <span>$129/month</span>
+          </ParagraphStyleLight>
+          <ul>
+            <li>
+              <span>Items:</span>
+            </li>
+            <li>Single page website (6 month)</li>
+            <li>Contentful CMS (6 month)</li>
+          </ul>
         </CheckoutLinkContainer>
       </CheckoutWrapper>
     </Layout>

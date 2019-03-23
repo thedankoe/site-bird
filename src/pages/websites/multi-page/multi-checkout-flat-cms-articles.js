@@ -10,10 +10,10 @@ import { HowList, HowListItem, HowListContainer } from '../single-page'
 import {
   CheckoutWrapper,
   CheckoutLinkContainer,
-} from './single-checkout-flat-cms'
+} from '../single-page/single-checkout-flat-cms'
 import CheckoutSku from '../../../components/checkoutSku'
 
-const SingleCheckoutFlatCMSArticles = ({ location }) => (
+const MultiCheckoutFlatCMSArticles = ({ location }) => (
   <>
     <Helmet title="Add on Content Articles">
       <html lang="en" />
@@ -50,24 +50,24 @@ const SingleCheckoutFlatCMSArticles = ({ location }) => (
         </HowListContainer>
         <CheckoutLinkContainer>
           <ParagraphStyleLight>
-            $200 to add on, <span>$699 total</span>
+            $200 to add on, <span>$1499 total</span>
           </ParagraphStyleLight>
           <CheckoutSku
-            sku="sku_EkNnKJmXJfIRqg"
+            sku="sku_EkUWLTVypMO4Uj"
             buttonText="Add on Content Articles"
           />
           <CheckoutSku
-            sku="sku_Eji2eabPqp46LZ"
+            sku="sku_EkUVSbajXZlh53"
             buttonText="Continue to Checkout"
           />
           <ParagraphStyleLight>
-            Current total: <span>$499</span>
+            Current total: <span>$1299</span>
           </ParagraphStyleLight>
           <ul>
             <li>
               <span>Items:</span>
             </li>
-            <li>Single page website</li>
+            <li>Multi page website</li>
             <li>Contentful CMS</li>
           </ul>
         </CheckoutLinkContainer>
@@ -76,4 +76,4 @@ const SingleCheckoutFlatCMSArticles = ({ location }) => (
   </>
 )
 
-export default SingleCheckoutFlatCMSArticles
+export default MultiCheckoutFlatCMSArticles

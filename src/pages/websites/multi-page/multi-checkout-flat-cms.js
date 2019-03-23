@@ -11,9 +11,9 @@ import { HowList, HowListItem, HowListContainer } from '../single-page'
 import {
   CheckoutWrapper,
   CheckoutLinkContainer,
-} from './single-checkout-flat-cms'
+} from '../single-page/single-checkout-flat-cms'
 
-const SingleCheckoutMonthlyCMS = ({ location }) => (
+const MultiCheckoutFlatCMS = ({ location }) => (
   <>
     <Helmet title="Add on Contentful CMS">
       <html lang="en" />
@@ -48,22 +48,22 @@ const SingleCheckoutMonthlyCMS = ({ location }) => (
         </HowListContainer>
         <CheckoutLinkContainer>
           <ParagraphStyleLight>
-            $40/month to add on, <span>$129/month total</span>
+            $300 to add on, <span>$1299 total</span>
           </ParagraphStyleLight>
-          <CheckoutLink to="/websites/single-page/single-checkout-monthly-cms-articles">
+          <CheckoutLink to="/websites/multi-page/multi-checkout-flat-cms-articles">
             Add on CMS
           </CheckoutLink>
-          <CheckoutLink to="/websites/single-page/single-checkout-monthly-articles">
-            Continue to Checkout
+          <CheckoutLink to="/websites/multi-page/multi-checkout-flat-articles">
+            Continue with Purchase
           </CheckoutLink>
           <ParagraphStyleLight>
-            Current total: <span>$89/month</span>
+            Current total: <span>$999</span>
           </ParagraphStyleLight>
           <ul>
             <li>
               <span>Items:</span>
             </li>
-            <li>Single page website (6 month)</li>
+            <li>Multi page website</li>
           </ul>
         </CheckoutLinkContainer>
       </CheckoutWrapper>
@@ -71,4 +71,4 @@ const SingleCheckoutMonthlyCMS = ({ location }) => (
   </>
 )
 
-export default SingleCheckoutMonthlyCMS
+export default MultiCheckoutFlatCMS
