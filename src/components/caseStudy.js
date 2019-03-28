@@ -65,12 +65,12 @@ const ParagraphContainer = styled.div`
 
   a {
     font-size: 2.2rem;
-    font-weight: 500;
-    color: ${props => props.theme.CTA};
+    font-weight: 700;
+    color: ${props => props.theme.tertiary};
     transition: all ease 0.3s;
 
     :hover {
-      color: ${props => props.theme.CTAHover};
+      color: ${props => props.theme.tertiaryLight};
     }
   }
 `
@@ -100,7 +100,7 @@ const CaseStudy = () => (
     query={CASE_STUDY_QUERY}
     render={data => (
       <CaseWrapper>
-        <HeadingStyle>Conversion Optimization Case Studies</HeadingStyle>
+        <HeadingStyle>Website Optimization Case Studies</HeadingStyle>
         <CaseContainer>
           <CaseImage fluid={data.file.childImageSharp.fluid} />
           <ParagraphContainer>

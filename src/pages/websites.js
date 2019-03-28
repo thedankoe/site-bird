@@ -8,144 +8,40 @@ import {
   ProblemLink,
 } from '../components/styles/TextStyles'
 import Layout from '../components/layout'
-import { device } from '../components/styles/MediaQueries'
 import Buy from '../components/buy'
-import ServicesSection from '../components/servicesSection'
-import { EmailIcon, RightIcon } from '../components/styles/IconStyles'
+import {
+  PackageWrapper,
+  PackageContainer,
+  HowListContainer,
+  HowList,
+  HowListItem,
+} from './websites/single-page'
+import ExampleOneImage from '../components/lazy-images/website-example-one'
+import ExampleTwoImage from '../components/lazy-images/website-example-two'
+import ExampleThreeImage from '../components/lazy-images/website-example-three'
+import { device } from '../components/styles/MediaQueries'
+import { RightIcon } from '../components/styles/IconStyles'
 
-export const MarketingPageHeading = styled(HeadingStyle)`
-  width: ${props => props.theme.maxWidth};
-  margin-top: ${props => props.theme.sectionSpace};
-  margin-left: auto;
-  margin-right: auto;
-  :after {
-    content: '';
-    height: 1px;
-    width: 150px;
-    margin: 1.5rem auto 0 auto;
-    background: ${props => props.theme.secondaryLight};
-    display: block;
-
-    @media ${device.tabletS} {
-      margin: 1.5rem 0 0 0;
-    }
-  }
-
-  @media ${device.desktop} {
-    width: 80%;
-  }
-
-  @media ${device.laptopL} {
-    width: 95%;
-  }
-`
-
-export const MarketingPageSubHeading = styled(SubHeadingStyle)`
-  width: ${props => props.theme.maxWidth};
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-
-  @media ${device.desktop} {
-    width: 80%;
-  }
-
-  @media ${device.laptopL} {
-    width: 95%;
-  }
-
-  @media ${device.tabletS} {
-    text-align: left;
-  }
-`
-
-export const MarketingPageParagraph = styled(ParagraphStyle)`
-  width: ${props => props.theme.maxWidth};
-  margin: 0 auto ${props => props.theme.textSpace} auto;
-  text-align: center;
-
-  @media ${device.desktop} {
-    width: 80%;
-  }
-
-  @media ${device.laptopL} {
-    width: 95%;
-  }
-
-  @media ${device.tabletS} {
-    text-align: left;
-  }
-`
-
-const EmailMarketingWrapper = styled.div`
+const ExampleWrapper = styled.div`
   width: 100%;
-  padding: ${props => props.theme.textSpace} 0;
-  background: linear-gradient(
-    to right bottom,
-    ${props => props.theme.secondaryLight},
-    ${props => props.theme.secondary}
-  );
-`
+  background: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
-const EmailMarketingContainer = styled.div`
-  width: ${props => props.theme.maxWidth};
-  margin: 0 auto;
-  padding: 2rem;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  text-align: center;
-
-  @media ${device.desktop} {
-    width: 80%;
-  }
-
-  @media ${device.laptopL} {
-    width: 95%;
-  }
-`
-
-const EmailSubHeading = styled(SubHeadingStyle)`
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  svg {
-    margin-right: 1rem;
-  }
-`
-
-const EmailParagraph = styled(ParagraphStyle)`
-  margin-bottom: 1.5rem;
-  color: #fff;
-`
-
-const BestServiceWrapper = styled.div`
-  width: ${props => props.theme.maxWidth};
-  margin: ${props => props.theme.sectionSpace} auto;
-  text-align: center;
-
-  @media ${device.desktop} {
-    width: 80%;
-  }
-
-  @media ${device.laptopL} {
-    width: 95%;
-  }
-
-  @media ${device.tabletS} {
-    text-align: left;
+  @media ${device.tabletL} {
+    grid-template-columns: 1fr;
   }
 `
 
 const OurWebsitesPage = ({ location }) => (
   <>
     <Helmet
-      title="Local Marketing Services for Small Businesses at an Affordable Price"
+      title="Website Design and Development for Small Businesses | SiteBird"
       meta={[
         {
           name: 'description',
           content:
-            'Local marketing services and SEO consulting for small businesses. We get your business ranking in search engines at an affordable price.',
+            'Small businesses need an optimized and beautiful website now more than ever. With our design and development, you will never worry about hiring another developer.',
         },
         {
           name: 'keywords',
@@ -158,53 +54,73 @@ const OurWebsitesPage = ({ location }) => (
     </Helmet>
     <Layout
       location={location}
-      headerText="Local Marketing Services"
-      headerSub="Rank in search results and grow online"
+      headerText="Websites that work"
+      headerSub="Built with the same tech as large companies"
     >
-      <MarketingPageHeading>
-        Local Marketing Services to Rank Your Small Business
-      </MarketingPageHeading>
-      <MarketingPageSubHeading>
-        Finding the right marketing company is not easy, there are so many
-        choices out there.
-      </MarketingPageSubHeading>
-      <MarketingPageSubHeading>
-        This is why we ONLY work with local businesses. We get you more
-        customers through effective online marketing and search engine ranking.
-      </MarketingPageSubHeading>
-      <MarketingPageParagraph>
-        We provide the following services&#58;
-      </MarketingPageParagraph>
-      <ServicesSection />
-      <EmailMarketingWrapper>
-        <EmailMarketingContainer>
-          <EmailSubHeading>
-            <EmailIcon /> Email Marketing
-          </EmailSubHeading>
-          <EmailParagraph>
-            The golden nugget for all businesses. Stay in weekly contact with
-            your current and future customers. Have us manage your email
-            marketing campaigns, with or without the purchase of an SEO package.
-          </EmailParagraph>
-          <ProblemLink to="/services/email-marketing">
-            Purchase standalone
-            <RightIcon />
-          </ProblemLink>
-        </EmailMarketingContainer>
-      </EmailMarketingWrapper>
-      <BestServiceWrapper>
-        <HeadingStyle>The right service for you</HeadingStyle>
+      <PackageWrapper>
+        <HeadingStyle>Stand out from the rest</HeadingStyle>
         <SubHeadingStyle>
-          We do not include specific services in each package, we build a
-          strategy tailored to your business and complete tasks that will result
-          in the most growth.
+          In short, we use the latest and greatest coding language to build your
+          website. It is extremely popular with large start ups and happens to
+          be the perfect solution for small businesses.
         </SubHeadingStyle>
-        <ParagraphStyle>
-          Cookie cutter SEO work should not exist. businesses understand that
-          they are each unique, they have different audiences, different mediums
-          for traffic, and need to be treated as such.
-        </ParagraphStyle>
-      </BestServiceWrapper>
+        <PackageContainer>
+          <div>
+            <SubHeadingStyle>Build your web foundation</SubHeadingStyle>
+            <ParagraphStyle>
+              Anything is possible with our development. We focus on creating an
+              extremely fast, well designed, and optimized website to start
+              (these are what we offer in our packages) and adding on
+              functionality that you need after your web presence already has an
+              amazing foundation.
+            </ParagraphStyle>
+          </div>
+          <div>
+            <SubHeadingStyle>Blow away the competition</SubHeadingStyle>
+            <ParagraphStyle>
+              "Build your own" websites have become a fad, and for good reason,
+              they are convenient. What they don't tell you is that they prime
+              your business with long term problems. Things break or don't work
+              how they were intended, what's your next option? Hire a developer
+              to fix the problem.
+            </ParagraphStyle>
+          </div>
+        </PackageContainer>
+      </PackageWrapper>
+      <ExampleWrapper>
+        <ExampleOneImage />
+        <ExampleTwoImage />
+        <ExampleThreeImage />
+      </ExampleWrapper>
+      <PackageWrapper>
+        <HowListContainer>
+          <HeadingStyle>Hiring someone? Forget about it.</HeadingStyle>
+          <HowList>
+            <HowListItem>
+              Our websites come completely optimized for everything really.
+              Mobile, usability, SEO, etc. Forget about hiring someone for
+              optimization.
+            </HowListItem>
+            <HowListItem>
+              Professionally designed for your business. We offer content and
+              image creation but incorporate the information that is necessary
+              to display your business with assets that you provide.
+            </HowListItem>
+            <HowListItem>
+              The technology that we use to create your site is used to fuel
+              large companies. To get technical, our caching, page speed, and
+              designs are up to par, if not better than the big guys.
+            </HowListItem>
+            <SubHeadingStyle>
+              Still have some questions? We dont bite.
+            </SubHeadingStyle>
+            <ProblemLink to="/contact">
+              Request more information
+              <RightIcon />
+            </ProblemLink>
+          </HowList>
+        </HowListContainer>
+      </PackageWrapper>
       <Buy location={location} />
     </Layout>
   </>

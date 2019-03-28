@@ -10,7 +10,7 @@ import BlogSection from '../components/blogSection'
 const IndexPage = ({ location }) => (
   <>
     <Helmet
-      title="Conversion Centered Websites for Small Businesses | SiteBird"
+      title="Fully Optimized Websites for Small Businesses | SiteBird"
       meta={[
         {
           name: 'description',

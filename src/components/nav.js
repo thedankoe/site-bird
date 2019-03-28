@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { Link } from 'gatsby'
 import './styles/nav.css'
 import { ToggleIcon } from './styles/IconStyles'
 import Toggle from './toggle'
 import NavLogo from '../images/sitebird-logo-navigation.png'
+
+const fadeUp = keyframes`
+  from { opacity: 0; transform: translateY(3rem);}
+  to { opacity: 1; transform: translateY( 0rem);}
+`
 
 const NavWrapper = styled.div`
   position: fixed;
@@ -42,6 +47,7 @@ const NavItem = styled.li`
   font-size: 1.8rem;
   font-weight: 500;
   color: #fff;
+  animation: ${fadeUp} 1s ease;
   a {
     position: relative;
     text-decoration: none;
@@ -162,13 +168,16 @@ class Nav extends Component {
                 <LogoImg src={NavLogo} alt="SiteBird logo" />
               </Logo>
               <NavItem>
+                <Link to="/websites">Websites</Link>
+              </NavItem>
+              <NavItem>
                 <Link to="/faq">FAQ</Link>
               </NavItem>
               <NavItem>
                 <Link to="/blog">Blog</Link>
               </NavItem>
               <NavItem>
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/contact">Contact</Link>
               </NavItem>
             </NavList>
           </NavContainer>
@@ -186,13 +195,16 @@ class Nav extends Component {
                   {on && (
                     <NavToggleList on={on} toggle={toggle}>
                       <NavToggleItem>
+                        <Link to="/websites">Websites</Link>
+                      </NavToggleItem>
+                      <NavToggleItem>
                         <Link to="/faq">FAQ</Link>
                       </NavToggleItem>
                       <NavToggleItem>
                         <Link to="/blog">Blog</Link>
                       </NavToggleItem>
                       <NavToggleItem>
-                        <Link to="/contact">Contact Us</Link>
+                        <Link to="/contact">Contact</Link>
                       </NavToggleItem>
                     </NavToggleList>
                   )}

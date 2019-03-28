@@ -103,14 +103,14 @@ const ArchiveHeading = styled.h4`
 
 const ArchiveLink = styled(Link)`
   font-size: 2.2rem;
-  color: ${props => props.theme.CTA};
+  color: ${props => props.theme.tertiary};
   display: block;
   transition: all ease 0.3s;
   :not(:last-child) {
     margin-bottom: 1.5rem;
   }
   :hover {
-    color: ${props => props.theme.CTAHover};
+    color: ${props => props.theme.tertiaryLight};
   }
 `
 

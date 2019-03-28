@@ -71,12 +71,15 @@ const HeadingStyleLight = styled.h2`
 
   @media ${device.tabletS} {
     text-align: left;
+    margin-left: auto;
+    margin-right: auto;
   }
 `
 
 const SubHeadingStyle = styled.h3`
   margin-bottom: 1rem;
   font-size: 2.4rem;
+  font-weight: 700;
   color: ${props => props.theme.primary};
 `
 
@@ -135,14 +138,14 @@ const LinkStyle = styled(Link)`
 `
 
 const PlainLink = styled(Link)`
-  color: ${props => props.theme.CTA};
+  color: ${props => props.theme.tertiary};
   font-size: 1.8rem;
   font-weight: 500;
   display: flex;
   align-items: center;
   transition: all ease 0.3s;
   :hover {
-    color: ${props => props.theme.CTAHover};
+    color: ${props => props.theme.tertiaryLight};
   }
   svg {
     transform: translateX(0.5rem);
@@ -150,12 +153,12 @@ const PlainLink = styled(Link)`
 `
 
 const ColoredLink = styled(Link)`
-  color: ${props => props.theme.CTA};
+  color: ${props => props.theme.tertiary};
   font-size: 2.2rem;
   font-weight: 500;
   transition: all ease 0.3s;
   :hover {
-    color: ${props => props.theme.CTAHover};
+    color: ${props => props.theme.tertiaryLight};
   }
 `
 
@@ -177,7 +180,7 @@ const CheckoutButton = styled.button`
   width: 100%;
   margin: 2rem auto 0 auto;
   padding: 4rem;
-  background: ${props => props.theme.CTA};
+  background: ${props => props.theme.tertiary};
   color: #fff;
   font-size: 2.2rem;
   font-weight: 500;
@@ -187,7 +190,7 @@ const CheckoutButton = styled.button`
   cursor: pointer;
   transition: all ease 0.3s;
   :hover {
-    background: ${props => props.theme.CTAHover};
+    background: ${props => props.theme.tertiaryLight};
     box-shadow: ${props => props.theme.bsHover};
     transform: translateY(0.3rem);
   }
@@ -198,7 +201,7 @@ const CheckoutLink = styled(Link)`
   width: 100%;
   margin: 2rem auto 0 auto;
   padding: 4rem;
-  background: ${props => props.theme.CTA};
+  background: ${props => props.theme.tertiary};
   color: #fff;
   font-size: 2.2rem;
   font-weight: 500;
@@ -208,7 +211,7 @@ const CheckoutLink = styled(Link)`
   box-shadow: ${props => props.theme.bs};
   transition: all ease 0.3s;
   :hover {
-    background: ${props => props.theme.CTAHover};
+    background: ${props => props.theme.tertiaryLight};
     box-shadow: ${props => props.theme.bsHover};
     transform: translateY(0.3rem);
   }
@@ -230,10 +233,10 @@ const SecondaryLinkStyle = styled(LinkStyle)`
 const FeedbackLinkStyle = styled(LinkStyle)`
   width: 17rem;
   padding: 1rem;
-  background: ${props => props.theme.CTA};
+  background: ${props => props.theme.tertiary};
   transform: translateY(2.5rem);
   &:hover {
-    background: ${props => props.theme.CTAHover};
+    background: ${props => props.theme.tertiaryLight};
     transform: translateY(2.8rem);
   }
 `

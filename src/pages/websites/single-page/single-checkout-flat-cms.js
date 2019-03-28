@@ -10,7 +10,6 @@ import {
   ParagraphStyleLight,
 } from '../../../components/styles/TextStyles'
 import { HowList, HowListItem, HowListContainer } from '../single-page'
-import HoneycombTexture from '../../../images/honeycomb-texture.png'
 import { device } from '../../../components/styles/MediaQueries'
 
 export const CheckoutWrapper = styled.div`
@@ -40,7 +39,11 @@ export const CheckoutLinkContainer = styled.div`
   width: 50%;
   margin: ${props => props.theme.textSpace} auto 0 auto;
   padding: ${props => props.theme.textSpace};
-  background-image: url(${HoneycombTexture});
+  background: linear-gradient(
+    to right bottom,
+    ${props => props.theme.secondary},
+    ${props => props.theme.secondaryLight}
+  );
   border-radius: 5px;
   box-shadow: ${props => props.theme.bs};
 

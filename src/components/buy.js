@@ -60,12 +60,6 @@ const Buy = () => (
         We offer two website packages: a single page website and a multi-page
         website. Both website styles are beautiful, optimized, and convert.
       </BuySubHeading>
-      <ParagraphStyleLight>
-        These packages provide exactly what your small business needs; a
-        beautiful, optimized, and fast website that converts. If you think your
-        website will need more functionality,{' '}
-        <ColoredLink to="/contact">contact us</ColoredLink>.
-      </ParagraphStyleLight>
       <ServicesCard />
       <ProblemLink to="/contact">
         Request more information

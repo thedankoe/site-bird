@@ -23,18 +23,6 @@ import {
 } from '../../components/servicesCard'
 import HoundstoothTexture from '../../images/houndstooth-texture.png'
 
-const SINGLE_PAGE_QUERY = graphql`
-  query SinglePageQuery {
-    file(relativePath: { eq: "placeholder.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
-
 export const PackageWrapper = styled.div`
   position: relative;
   width: ${props => props.theme.maxWidth};
@@ -68,7 +56,7 @@ export const PackageContainer = styled.div`
 `
 
 export const HowListContainer = styled.div`
-  margin: 0 auto;
+  margin: ${props => props.theme.textSpace} auto 0 auto;
 
   h3 {
     width: 80%;
@@ -237,164 +225,140 @@ export const PackageBuyCTA = styled.div`
 `
 
 const StandardPage = ({ location }) => (
-  <StaticQuery
-    query={SINGLE_PAGE_QUERY}
-    render={data => (
-      <>
-        <Helmet
-          title="Standard SEO Consulting Package | Affordable Online Consulting for Local Businesses"
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
-        <Layout
-          location={location}
-          headerText="Single Page Website"
-          headerSub="Get the point across, get customers buying."
-        >
-          <PackageWrapper>
-            <HeadingStyle>Why a single page website?</HeadingStyle>
-            <SubHeadingStyle>
-              Single page websites have been growing in popularity recently,
-              even large companies with multiple pages have most of the
-              information you would ever need on their home page.
-            </SubHeadingStyle>
-            <PackageContainer>
-              <div>
-                <SubHeadingStyle>Focus on the customer</SubHeadingStyle>
-                <ParagraphStyle>
-                  A customer came to your website because they are interested in
-                  buying a service or product. Having everything they need on
-                  one page will only increase their chances of buying. Then,
-                  it's up to your website to convert.
-                </ParagraphStyle>
-              </div>
-              <div>
-                <SubHeadingStyle>Centralize your information</SubHeadingStyle>
-                <ParagraphStyle>
-                  One page is more than enough to display the information you
-                  need. Most websites have a jumble of information that is
-                  either not targeted, or useless in having customers buy from
-                  you. Let your website display what custoemrs want.
-                </ParagraphStyle>
-              </div>
-            </PackageContainer>
-          </PackageWrapper>
-          <ExampleWrapper>
-            <ExampleContainer>
-              <ExampleImgContainer>
-                <p>example text</p>
-                <Img fluid={data.file.childImageSharp.fluid} />
-              </ExampleImgContainer>
-              <ExampleImgContainer>
-                <p>example text</p>
-                <Img fluid={data.file.childImageSharp.fluid} />
-              </ExampleImgContainer>
-            </ExampleContainer>
-          </ExampleWrapper>
-          <PackageWrapper>
-            <HowListContainer>
-              <HeadingStyle>Benefits of single page websites</HeadingStyle>
-              <HowList>
-                <HowListItem>
-                  Customers only have one place to go and one place to buy
-                </HowListItem>
-                <HowListItem>
-                  You will only have to worry about ranking for targeted content
-                  (SEO blog posts). We give you detailed emails on how to do
-                  this.
-                </HowListItem>
-                <HowListItem>
-                  More pages can be added at any time, even though it may not be
-                  needed
-                </HowListItem>
-                <HowListItem>
-                  All of your information is in one place, you do not need to
-                  send customers to specific pages
-                </HowListItem>
-              </HowList>
-              <SubHeadingStyle>
-                We touch base weekly with updates on your website, any changes
-                you want to make during this time are implemented.
-              </SubHeadingStyle>
-            </HowListContainer>
-          </PackageWrapper>
-          <BuyWrapper>
-            <BuyContainer>
-              <HeadingStyleLight>Start Converting</HeadingStyleLight>
-              <CardContainer>
-                <Card>
-                  <HeadingStyle>Flat Fee</HeadingStyle>
-                  <SubHeadingStyle>1 month completion time</SubHeadingStyle>
-                  <CardParagraph>$299</CardParagraph>
-                  <ParagraphStyle>1 month of revisions</ParagraphStyle>
-                  <CardList>
-                    <li>
-                      <div>
-                        <CheckMark />
-                      </div>
-                      Professionally designed with your businesses colors and
-                      ideals
-                    </li>
-                    <li>
-                      <div>
-                        <CheckMark />
-                      </div>
-                      Contact form connected to your business email, spam
-                      protected
-                    </li>
-                    <li>
-                      <div>
-                        <CheckMark />
-                      </div>
-                      Conversion centered colors, call to actions, and content
-                    </li>
-                  </CardList>
-                  <CheckoutLink to="/websites/single-page/single-checkout-flat-cms">
-                    Continue to Checkout
-                  </CheckoutLink>
-                </Card>
-                <Card>
-                  <HeadingStyle>6 month contract</HeadingStyle>
-                  <SubHeadingStyle>1 month completion time</SubHeadingStyle>
-                  <CardParagraph>$89/month</CardParagraph>
-                  <ParagraphStyle>1 month of revisions</ParagraphStyle>
-                  <CardList>
-                    <li>
-                      <div>
-                        <CheckMark />
-                      </div>
-                      Professionally designed with your businesses colors and
-                      ideals
-                    </li>
-                    <li>
-                      <div>
-                        <CheckMark />
-                      </div>
-                      Contact form connected to your business email, spam
-                      protected
-                    </li>
-                    <li>
-                      <div>
-                        <CheckMark />
-                      </div>
-                      Conversion centered colors, call to actions, and content
-                    </li>
-                  </CardList>
-                  <CheckoutLink to="/websites/single-page/single-checkout-monthly-cms">
-                    Continue to Checkout
-                  </CheckoutLink>
-                </Card>
-              </CardContainer>
-            </BuyContainer>
-          </BuyWrapper>
-        </Layout>
-      </>
-    )}
-  />
+  <>
+    <Helmet
+      title="Standard SEO Consulting Package | Affordable Online Consulting for Local Businesses"
+      meta={[
+        { name: 'description', content: 'Sample' },
+        { name: 'keywords', content: 'sample, something' },
+      ]}
+    >
+      <html lang="en" />
+    </Helmet>
+    <Layout
+      location={location}
+      headerText="Single Page Website"
+      headerSub="Get the point across, get customers buying."
+    >
+      <PackageWrapper>
+        <HeadingStyle>Why a single page website?</HeadingStyle>
+        <SubHeadingStyle>
+          Single page websites have been growing in popularity recently, even
+          large companies with multiple pages have most of the information you
+          would ever need on their home page.
+        </SubHeadingStyle>
+        <PackageContainer>
+          <div>
+            <SubHeadingStyle>Focus on the customer</SubHeadingStyle>
+            <ParagraphStyle>
+              A customer came to your website because they are interested in
+              buying a service or product. Having everything they need on one
+              page will only increase their chances of buying. Then, it's up to
+              your website to convert.
+            </ParagraphStyle>
+          </div>
+          <div>
+            <SubHeadingStyle>Centralize your information</SubHeadingStyle>
+            <ParagraphStyle>
+              One page is more than enough to display the information you need.
+              Most websites have a jumble of information that is either not
+              targeted, or useless in having customers buy from you. Let your
+              website display what custoemrs want.
+            </ParagraphStyle>
+          </div>
+        </PackageContainer>
+        <HowListContainer>
+          <HeadingStyle>Benefits of single page websites</HeadingStyle>
+          <HowList>
+            <HowListItem>
+              Customers only have one place to go and one place to buy
+            </HowListItem>
+            <HowListItem>
+              You will only have to worry about ranking for targeted content
+              (SEO blog posts). We give you detailed emails on how to do this.
+            </HowListItem>
+            <HowListItem>
+              More pages can be added at any time, even though it may not be
+              needed
+            </HowListItem>
+            <HowListItem>
+              All of your information is in one place, you do not need to send
+              customers to specific pages
+            </HowListItem>
+          </HowList>
+          <SubHeadingStyle>
+            We touch base weekly with updates on your website, any changes you
+            want to make during this time are implemented.
+          </SubHeadingStyle>
+        </HowListContainer>
+      </PackageWrapper>
+      <BuyWrapper>
+        <BuyContainer>
+          <HeadingStyleLight>Start Converting</HeadingStyleLight>
+          <CardContainer>
+            <Card>
+              <HeadingStyle>Flat Fee</HeadingStyle>
+              <SubHeadingStyle>1 month completion time</SubHeadingStyle>
+              <CardParagraph>$299</CardParagraph>
+              <ParagraphStyle>1 month of revisions</ParagraphStyle>
+              <CardList>
+                <li>
+                  <div>
+                    <CheckMark />
+                  </div>
+                  Professionally designed with your businesses colors and ideals
+                </li>
+                <li>
+                  <div>
+                    <CheckMark />
+                  </div>
+                  Contact form connected to your business email, spam protected
+                </li>
+                <li>
+                  <div>
+                    <CheckMark />
+                  </div>
+                  Conversion centered colors, call to actions, and content
+                </li>
+              </CardList>
+              <CheckoutLink to="/websites/single-page/single-checkout-flat-cms">
+                Continue to Checkout
+              </CheckoutLink>
+            </Card>
+            <Card>
+              <HeadingStyle>6 month contract</HeadingStyle>
+              <SubHeadingStyle>1 month completion time</SubHeadingStyle>
+              <CardParagraph>$89/month</CardParagraph>
+              <ParagraphStyle>1 month of revisions</ParagraphStyle>
+              <CardList>
+                <li>
+                  <div>
+                    <CheckMark />
+                  </div>
+                  Professionally designed with your businesses colors and ideals
+                </li>
+                <li>
+                  <div>
+                    <CheckMark />
+                  </div>
+                  Contact form connected to your business email, spam protected
+                </li>
+                <li>
+                  <div>
+                    <CheckMark />
+                  </div>
+                  Conversion centered colors, call to actions, and content
+                </li>
+              </CardList>
+              <CheckoutLink to="/websites/single-page/single-checkout-monthly-cms">
+                Continue to Checkout
+              </CheckoutLink>
+            </Card>
+          </CardContainer>
+        </BuyContainer>
+      </BuyWrapper>
+    </Layout>
+  </>
 )
 
 export default StandardPage

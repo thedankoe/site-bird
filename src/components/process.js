@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { device } from './styles/MediaQueries'
 import { HeadingStyle, ParagraphStyle } from './styles/TextStyles'
 import { PencilIcon } from './styles/IconStyles'
-import HoneycombTexture from '../images/honeycomb-texture.png'
 
 const ProcessWrapper = styled.div`
   width: ${props => props.theme.maxWidth};
@@ -35,7 +34,11 @@ export const ProcessList = styled.ol`
 export const ProcessListContainer = styled.div`
   width: 70%;
   padding: 1.5rem 3rem;
-  background-image: url(${HoneycombTexture});
+  background: linear-gradient(
+    to right bottom,
+    ${props => props.theme.secondary},
+    ${props => props.theme.secondaryLight}
+  );
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -91,8 +94,8 @@ const Process = () => (
           Step 1
           <span>
             A package is purchased, you will be redirected to a form to give us
-            information on your business and a contract to sign. If you pay in
-            full, the contract is to hold us accountable for our work.
+            information on your business. You will be emailed a contract to
+            sign. If you pay in full, do not worry about a contract.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -103,9 +106,9 @@ const Process = () => (
         <ProcessListItem>
           Step 2
           <span>
-            We start building, a temporary link will be sent to you so you can
-            see the progress of the site. Questions, concerns, and revisions are
-            taken care of for a month after the website is finished.
+            The first week is spent getting all of the information we need on
+            your business. We do this through Slack or email, we want the
+            content on your site to be perfect.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -116,9 +119,9 @@ const Process = () => (
         <ProcessListItem>
           Step 3
           <span>
-            The website is <em>normally</em> completed within a month of
-            purchase. We are on call for small updates and fixes for the length
-            of the contract (if 6 month contract is purchased).
+            We start building, a temporary link will be available 3 weeks after
+            purchase. Questions, concerns, and revisions are taken care of for 1
+            month after the website is finished.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -129,7 +132,20 @@ const Process = () => (
         <ProcessListItem>
           Step 4
           <span>
-            If you love our website (we know you will), we offer a retainer
+            Single page sites are completed in a month, multi page sites in 2
+            months. We handle revisions, updates, and fixes for 1 month after
+            completion.
+          </span>
+        </ProcessListItem>
+      </ProcessListContainer>
+      <ProcessListContainer>
+        <div>
+          <ProcessListIcon />
+        </div>
+        <ProcessListItem>
+          Step 5
+          <span>
+            If you love your website (we know you will), we offer a retainer
             service for website revisions and updates. This will be offered
             after all of the original work is done.
           </span>
@@ -138,9 +154,10 @@ const Process = () => (
     </ProcessList>
     <HeadingStyle>Money Back Guarentee</HeadingStyle>
     <ParagraphStyle>
-      If you are unhappy with our services within the first 2 weeks of purchase,
-      you get a money back guarentee. No questions asked. We use this as a
-      benchmark, our products should be of immense value to your business.
+      If you are unhappy with our services within a month of your purcahse (or
+      before the completion of a single page website), we give you your money
+      back. Keep in mind that you have 1 month of revisions for any website
+      package after the website is completed.
     </ParagraphStyle>
   </ProcessWrapper>
 )

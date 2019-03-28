@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import PropTypes from 'prop-types'
 import { Spring } from 'react-spring'
 import Nav from './nav'
@@ -7,6 +7,11 @@ import { HeaderLinkStyle } from './styles/TextStyles'
 import { DownIcon } from './styles/IconStyles'
 import HeaderImg from '../images/seo-marketing-hero.jpg'
 import { device } from './styles/MediaQueries'
+
+const fadeIn = keyframes`
+  from { opacity: 0; transform: translateX(-3rem);}
+  to { opacity: 1; transform: translateX( 0rem);}
+`
 
 const HeaderWrapper = styled.header`
   width: 100%;
@@ -27,6 +32,7 @@ const HeaderContainer = styled.div`
   margin: 0 auto;
   display: flex;
   align-items: center;
+  animation: ${fadeIn} 1s ease;
 `
 
 const HeaderText = styled.div`
@@ -120,9 +126,9 @@ const Header = ({ location, headerText, headerSub }) => (
           {location.pathname === '/' ? (
             <HeaderText>
               <HeaderHeadingHome>
-                Conversion centered websites for small businesses
+                Fully optimized websites for small businesses
                 <HeaderSubHeading>
-                  Extremely fast, optimized, and affordable.
+                  Never hire anyone for website problems again.
                 </HeaderSubHeading>
               </HeaderHeadingHome>
               <HeaderLink to="/#packages">

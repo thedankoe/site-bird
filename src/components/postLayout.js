@@ -112,13 +112,13 @@ const PostContainer = styled.div`
   }
 
   a {
-    color: ${props => props.theme.CTA};
+    color: ${props => props.theme.tertiary};
     font-size: 2.2rem;
     font-weight: 500;
     line-height: 1.8;
     transition: all ease 0.3s;
     :hover {
-      color: ${props => props.theme.CTAHover};
+      color: ${props => props.theme.tertiaryLight};
     }
   }
 

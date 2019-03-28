@@ -57,7 +57,7 @@ const FormGroup = styled.div`
       outline: none;
     }
     ::placeholder {
-      font-family: Roboto, sans-serif;
+      font-family: Ubuntu, sans-serif;
       font-size: 1.8rem;
       color: ${props => props.theme.lightGrey};
     }
@@ -69,7 +69,7 @@ const FormGroup = styled.div`
 
 const FormButton = styled.button`
   padding: 1.5rem 2rem;
-  background: ${props => props.theme.CTA};
+  background: ${props => props.theme.tertiary};
   font-size: 1.8rem;
   color: #fff;
   border: none;
@@ -78,7 +78,7 @@ const FormButton = styled.button`
   transition: all ease 0.3s;
   :hover {
     cursor: pointer;
-    background: ${props => props.theme.CTAHover};
+    background: ${props => props.theme.tertiaryLight};
     box-shadow: ${props => props.theme.bsHover};
     transform: translateY(0.5rem);
   }

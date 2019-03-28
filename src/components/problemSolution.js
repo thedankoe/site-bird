@@ -72,17 +72,6 @@ const WrapperBlue = styled.div`
   padding: ${props => props.theme.textSpace} 0;
   background-image: url(${PrismTexture});
   color: #fff;
-
-  h2 {
-    ::after {
-      @media ${device.tabletS} {
-        margin: 1.5rem auto 0 auto;
-      }
-    }
-    @media ${device.tabletS} {
-      text-align: center;
-    }
-  }
 `
 
 const ProbContainerBlue = styled.div`
@@ -94,7 +83,7 @@ const ProbContainerBlue = styled.div`
   }
 
   @media ${device.laptop} {
-    width: 90%;
+    width: 95%;
   }
 `
 
@@ -197,12 +186,12 @@ const ProblemSolution = () => (
         <WrapperBlue>
           <ProbContainerBlue>
             <HeadingStyleLight>
-              Websites aren't meant to look pretty
+              Prevent hiring someone to fix problems
             </HeadingStyleLight>
             <ParagraphBlue>
-              They are meant to convert and bring in customers. Buying a website
-              with a main goal of looking good will only get you so far. Here's
-              what this can lead to:
+              The web is a touchy place, buying a website that has the main
+              purpose of looking pretty will only get you so far. This includes
+              "build your own" websites, here's what this can lead to:
             </ParagraphBlue>
             <ProblemList>
               <ProblemListItem>

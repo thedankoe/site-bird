@@ -89,8 +89,8 @@ const ServicesCard = () => (
     <Card>
       <HeadingStyle>Single Page</HeadingStyle>
       <SubHeadingStyle>
-        Perfect for businesses that want to get their point across and get
-        customers to buy. Common for new businesses.
+        Perfect for landing pages or full websites. Get the point across and get
+        customers buying.
       </SubHeadingStyle>
       <CardParagraph>$299 flat fee</CardParagraph>
       <ParagraphStyle>Or</ParagraphStyle>
@@ -121,14 +121,8 @@ const ServicesCard = () => (
           <div>
             <CheckMark />
           </div>
-          Very popular with new businesses, in some circumstances single page
-          sites convert more.
-        </li>
-        <li>
-          <div>
-            <CheckMark />
-          </div>
-          Ability to add on pages at any time after website completion.
+          Ability to add on pages at any time after website completion at an
+          affordable price.
         </li>
         <li>
           <div>
@@ -143,8 +137,8 @@ const ServicesCard = () => (
     <Card>
       <HeadingStyle>Multi Page</HeadingStyle>
       <SubHeadingStyle>
-        Maximum 6 pages. For businesses that want the full website experience.
-        Common for established businesses.
+        5 pages are included. Great for businesses that want the traditional
+        website feel.
       </SubHeadingStyle>
       <CardParagraph>$999 flat fee</CardParagraph>
       <ParagraphStyle>Or</ParagraphStyle>
@@ -168,21 +162,15 @@ const ServicesCard = () => (
           <div>
             <CheckMark />
           </div>
-          Up to 5 custom pages not including the home or contact page. Fast
-          transitions with small load time.
+          5 custom pages. Traditionally these are the home, contact, about, FAQ,
+          and services.
         </li>
         <li>
           <div>
             <CheckMark />
           </div>
-          Popular with established businesses looking for a redesign or a new
-          website all together.
-        </li>
-        <li>
-          <div>
-            <CheckMark />
-          </div>
-          Ability to add on pages at any time after website completion.
+          Ability to add on pages at any time after website completion at an
+          affordable price.
         </li>
         <li>
           <div>

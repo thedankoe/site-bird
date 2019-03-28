@@ -9,10 +9,10 @@ import { device } from './styles/MediaQueries'
 const theme = {
   primary: '#262626',
   primaryLight: '#3D3D3D',
-  secondary: '#035975',
-  secondaryLight: '#1BB3E8',
-  CTA: '#DE7300',
-  CTAHover: '#FF8400',
+  secondary: '#4a74c9',
+  secondaryLight: '#4696e5',
+  tertiary: '#ff392e',
+  tertiaryLight: '#ff5148',
   black: '#004040',
   grey: '#333',
   lightGrey: '#DDD',
@@ -29,8 +29,8 @@ const theme = {
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    src: url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
-    font-family: Roboto, sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+    font-family: Ubuntu, sans-serif;
     font-weight: 400;
     font-style: normal;
   }
@@ -55,13 +55,13 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-size: 1.6rem;
     line-height: 1.7;
-    font-family: Roboto, sans-serif;
+    font-family: Ubuntu, sans-serif;
   }
   a {
-    font-family: Roboto, sans-serif;
+    font-family: Ubuntu, sans-serif;
     text-decoration: none;
   }
-  button {  font-family: Roboto, sans-serif; }
+  button {  font-family: Ubuntu, sans-serif; }
   ::selection {
     color: #fff;
     background: ${props => props.theme.secondaryLight};

@@ -81,7 +81,7 @@ const Footer = () => (
       <nav>
         <FooterNavList>
           <FooterNavItem>
-            <Link to="/websites">Our Websites</Link>
+            <Link to="/websites">Websites</Link>
           </FooterNavItem>
           <FooterNavItem>
             <Link to="/faq">FAQ</Link>
@@ -90,7 +90,7 @@ const Footer = () => (
             <Link to="/blog">Blog</Link>
           </FooterNavItem>
           <FooterNavItem>
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/contact">Contact</Link>
           </FooterNavItem>
         </FooterNavList>
       </nav>

@@ -12,8 +12,9 @@ import {
   TiArrowSortedUp,
   TiSocialFacebookCircular,
   TiTimes,
+  TiInputChecked,
 } from 'react-icons/ti'
-import { MdDone, MdReorder, MdEmail } from 'react-icons/md'
+import { MdReorder, MdEmail } from 'react-icons/md'
 
 const iconStyles = css`
   fill: ${props => props.theme.secondaryLight};
@@ -66,12 +67,12 @@ const UpIcon = styled(TiArrowSortedUp)`
 `
 
 const CrossIcon = styled(TiTimes)`
-  fill: ${props => props.theme.warning};
+  fill: ${props => props.theme.tertiary};
   margin-right: 0.5rem;
   font-size: 1.8rem;
 `
 
-const CheckMark = styled(MdDone)`
+const CheckMark = styled(TiInputChecked)`
   fill: ${props => props.theme.secondaryLight};
   font-size: 1.8rem;
   margin-right: 0.5rem;
