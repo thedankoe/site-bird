@@ -53,11 +53,11 @@ const MultiCheckoutMonthlyCMSArticles = ({ location }) => (
             $40/month to add on, <span>$299/month total</span>
           </ParagraphStyleLight>
           <CheckoutPlan
-            plan="plan_EkUltwkM97B1ev"
-            buttonText="Add on Content Articles"
+            plan="plan_EmzeydLg7twckX"
+            buttonText="Checkout With Articles"
           />
           <CheckoutPlan
-            plan="plan_EkUktFJ7MmVxaM"
+            plan="plan_EmzdWE6Rgm9QUw"
             buttonText="Continue to Checkout"
           />
           <ParagraphStyleLight>

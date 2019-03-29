@@ -53,11 +53,11 @@ const SingleCheckoutMonthlyArticles = ({ location }) => (
             $40/month to add on, <span>$129/month total</span>
           </ParagraphStyleLight>
           <CheckoutPlan
-            plan="plan_EkO6TWJOmzuolh"
-            buttonText="Add on Content Articles"
+            plan="plan_Emzb3KcJuEz3Hn"
+            buttonText="Checkout With Articles"
           />
           <CheckoutPlan
-            plan="plan_EiVlO8yJlW5rHf"
+            plan="plan_EhiIqdhjb48y4Q"
             buttonText="Continue to Checkout"
           />
           <ParagraphStyleLight>

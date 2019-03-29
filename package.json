@@ -1,6 +1,6 @@
 {
-  "name": "seobird",
-  "description": "SEO Agency",
+  "name": "sitebird",
+  "description": "Website creation for small businesses",
   "version": "1.0.0",
   "author": "Dan Koe <thedankoe@gmail.com>",
   "dependencies": {

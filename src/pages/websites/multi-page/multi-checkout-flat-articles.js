@@ -53,11 +53,11 @@ const MultiCheckoutFlatArticles = ({ location }) => (
             $200 to add on, <span>$1199 total</span>
           </ParagraphStyleLight>
           <CheckoutSku
-            sku="sku_EkUT18efJq76pv"
-            buttonText="Add on Content Articles"
+            sku="sku_Emzc8wN1gM9YP2"
+            buttonText="Checkout With Articles"
           />
           <CheckoutSku
-            sku="sku_EiVk4ehOXT7Dwl"
+            sku="sku_EhiG8skuw19ZoZ"
             buttonText="Continue to Checkout"
           />
           <ParagraphStyleLight>
