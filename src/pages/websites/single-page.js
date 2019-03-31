@@ -1,8 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
-import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
 import Layout from '../../components/layout'
 import {
   HeadingStyle,
@@ -224,13 +222,16 @@ export const PackageBuyCTA = styled.div`
   height: 100%;
 `
 
-const StandardPage = ({ location }) => (
+const SinglePage = ({ location }) => (
   <>
     <Helmet
-      title="Standard SEO Consulting Package | Affordable Online Consulting for Local Businesses"
+      title="Single Page Optimized Website Creation | SiteBird"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        {
+          name: 'description',
+          content:
+            'Fully optimized single page websites contain all of your content on one page. Mobile responsive, usability tested, fast performance, and SEO optimized.',
+        },
       ]}
     >
       <html lang="en" />
@@ -263,7 +264,7 @@ const StandardPage = ({ location }) => (
               One page is more than enough to display the information you need.
               Most websites have a jumble of information that is either not
               targeted, or useless in having customers buy from you. Let your
-              website display what custoemrs want.
+              website display what customers want.
             </ParagraphStyle>
           </div>
         </PackageContainer>
@@ -271,7 +272,7 @@ const StandardPage = ({ location }) => (
           <HeadingStyle>Benefits of single page websites</HeadingStyle>
           <HowList>
             <HowListItem>
-              Customers only have one place to go and one place to buy
+              Customers only have one place to go and one place to buy.
             </HowListItem>
             <HowListItem>
               You will only have to worry about ranking for targeted content
@@ -279,11 +280,11 @@ const StandardPage = ({ location }) => (
             </HowListItem>
             <HowListItem>
               More pages can be added at any time, even though it may not be
-              needed
+              needed.
             </HowListItem>
             <HowListItem>
               All of your information is in one place, you do not need to send
-              customers to specific pages
+              customers to specific pages.
             </HowListItem>
           </HowList>
           <SubHeadingStyle>
@@ -361,4 +362,4 @@ const StandardPage = ({ location }) => (
   </>
 )
 
-export default StandardPage
+export default SinglePage

@@ -1,7 +1,5 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
 import Layout from '../../components/layout'
 import {
   HeadingStyle,
@@ -21,27 +19,12 @@ import {
 import {
   PackageWrapper,
   PackageContainer,
-  // ExampleWrapper,
-  // ExampleContainer,
-  // ExampleImgContainer,
   HowListContainer,
   HowList,
   HowListItem,
 } from './single-page'
 
-const MULTI_PAGE_QUERY = graphql`
-  query MultiPageQuery {
-    file(relativePath: { eq: "placeholder.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
-
-const StandardPage = ({ location }) => (
+const MultiPage = ({ location }) => (
   <>
     <Helmet
       title="SiteBird | Multi Page Conversion Centered Website"
@@ -180,4 +163,4 @@ const StandardPage = ({ location }) => (
   </>
 )
 
-export default StandardPage
+export default MultiPage

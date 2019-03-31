@@ -76,14 +76,15 @@ const FAQPage = ({ location }) => (
               How do your websites stand out from others?
             </UltraSubHeadingStyle>
             <ParagraphStyle>
-              Firstly, we use a new language that most people are not using. It
-              is called Gatsby.js and will be extremely popular in the coming
-              years, more popular than it already is. It outputs a website that
-              loads EXTREMELY fast out of the box.
+              Firstly, we use enterprise level tech that most people are not
+              using for small businesses. In our opinion, it is undoubtably the
+              best tech to build your website with. The website's performance is
+              unmatched and with our opimization, it is the ultimate small
+              business website.
             </ParagraphStyle>
             <FAQParagraph>
               Our team has specializations in usability and SEO, not just web
-              development. We optimize your website for all of these.
+              development. We optimize your website in all areas.
             </FAQParagraph>
           </div>
           <div>
@@ -97,9 +98,10 @@ const FAQPage = ({ location }) => (
               being able to save some money.
             </ParagraphStyle>
             <FAQParagraph>
-              We have streamlined processes in place that make development for
-              small businesses much quicker than other companies, without
-              sacrificing quality of course.
+              We start by getting your website online and converting. Custom
+              functionality can be added on after your website is online. This
+              gives you an affordable website with the ability to scale with
+              your growth.
             </FAQParagraph>
           </div>
           <div>
@@ -107,8 +109,9 @@ const FAQPage = ({ location }) => (
               Do you create WordPress / Wix / Squarespace sites?
             </UltraSubHeadingStyle>
             <ParagraphStyle>
-              We do not. All of these platforms have a place, but they also make
-              it difficult to have the fastest load times while being optimized.
+              We do not. All of these platforms have a place, but they make it
+              difficult to optimize or add on features without hiring a
+              developer.
             </ParagraphStyle>
             <FAQParagraph>
               We do offer a content management system (Contentful) during
@@ -142,12 +145,9 @@ const FAQPage = ({ location }) => (
               local or small businesses.
             </ParagraphStyle>
             <FAQParagraph>
-              If you are looking for a custom piece of functionality (i.e. an
-              online order form),{' '}
-              <ColoredLink to="/contact">
-                contact us for a personalized website package
-              </ColoredLink>
-              .
+              We prioritize getting your website online, custom functionality
+              comes after. You have the ability to add any custom features you'd
+              like after website completion.
             </FAQParagraph>
           </div>
           <div>
@@ -161,8 +161,8 @@ const FAQPage = ({ location }) => (
               organically grow your business.
             </ParagraphStyle>
             <FAQParagraph>
-              Our sister agency, <a href="https://www.seo-bird.com">SEOBird</a>{' '}
-              specializes in growing businesses with off-page SEO.
+              We offer a discounted rate with our sister agency, SEOBird, after
+              website completion and revision period.
             </FAQParagraph>
           </div>
         </FAQContainer>

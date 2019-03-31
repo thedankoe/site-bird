@@ -1,6 +1,5 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import styled from 'styled-components'
 import Layout from '../components/layout'
 import { HeadingStyle, ColoredLink } from '../components/styles/TextStyles'
 import { ClientFormWrapper, ClientFormContainer } from './checkout-success'
@@ -23,10 +22,7 @@ const CheckoutSucessPage = ({ location }) => (
             Check out our growth tips <RightIcon />
           </ColoredLink>
           <ColoredLink to="/services">
-            More information on our services <RightIcon />
-          </ColoredLink>
-          <ColoredLink to="/services/email-marketing">
-            Interested in email marketing? <RightIcon />
+            More information on our websites <RightIcon />
           </ColoredLink>
           <ColoredLink to="/services/website">
             Need a new website? <RightIcon />

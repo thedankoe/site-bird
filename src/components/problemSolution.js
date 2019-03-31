@@ -166,7 +166,7 @@ const ProblemSolution = () => (
     render={data => (
       <>
         <ProblemWrapper>
-          <HeadingStyle>Most websites don't convert</HeadingStyle>
+          <HeadingStyle>Most websites aren't optimized</HeadingStyle>
           <ProblemContainer>
             <div>
               <ParagraphStyle>

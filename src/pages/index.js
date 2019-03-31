@@ -6,6 +6,7 @@ import ProblemSolution from '../components/problemSolution'
 import Process from '../components/process'
 import Buy from '../components/buy'
 import BlogSection from '../components/blogSection'
+import TestimonialSection from '../components/testimonials'
 
 const IndexPage = ({ location }) => (
   <>
@@ -26,6 +27,7 @@ const IndexPage = ({ location }) => (
       <CaseStudy />
       <ProblemSolution />
       <Process />
+      <TestimonialSection />
       <Buy />
       <BlogSection />
     </Layout>

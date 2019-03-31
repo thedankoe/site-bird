@@ -6,6 +6,10 @@ import SuccessBGDesktop from '../images/checkout-success-bg-desktop.jpg'
 import SuccessBGTablet from '../images/checkout-success-bg-tablet.jpg'
 import SuccessBGMobile from '../images/checkout-success-bg-mobile.jpg'
 import { device } from '../components/styles/MediaQueries'
+import {
+  SubHeadingStyle,
+  ParagraphStyle,
+} from '../components/styles/TextStyles'
 
 export const ClientFormWrapper = styled.div`
   padding: ${props => props.theme.sectionSpace} 0;
@@ -37,23 +41,24 @@ export const ClientFormContainer = styled.div`
   @media ${device.tablet} {
     width: 95%;
   }
-`
 
-const ClientForm = styled.iframe`
-  border: none;
-  width: 64rem;
-  height: 135.9rem;
+  a {
+    margin-top: ${props => props.theme.textSpace};
+    padding: 1.5rem;
+    background: ${props => props.theme.tertiary};
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 500;
+    border-radius: 3px;
+    box-shadow: ${props => props.theme.bs};
+    align-self: flex-start;
+    transition: all ease 0.3s;
 
-  @media ${device.desktop} {
-    width: 100%;
-  }
-
-  @media ${device.laptop} {
-    height: 150rem;
-  }
-
-  @media ${device.tabletS} {
-    height: 200rem;
+    :hover {
+      background: ${props => props.theme.tertiaryLight};
+      box-shadow: ${props => props.theme.bsHover};
+      transform: translateY(0.3rem);
+    }
   }
 `
 
@@ -65,16 +70,26 @@ const CheckoutSucessPage = ({ location }) => (
     <Layout
       location={location}
       headerText="Your payment was successful"
-      headerSub="We need a bit more information about your business"
+      headerSub="We need a bit more information about your business."
     >
       <ClientFormWrapper>
         <ClientFormContainer>
-          <ClientForm
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfOMCfUfP1ERSrL2DqJoqeuAKrDqIrW-CqmN037sPbv-FjQkw/viewform?embedded=true"
-            frameBorder="0"
+          <SubHeadingStyle>
+            Before we get started we need a bit more information from you.
+            Please click the following button and fill out a form regarding
+            information about your business.
+          </SubHeadingStyle>
+          <ParagraphStyle>
+            If you purchased a website with a 6 month contract, you will be
+            emailed the contract within 24 hours of finishing this form.
+          </ParagraphStyle>
+          <a
+            href="https://form.jotform.com/90846814288166"
+            rel="noopener noreferrer"
+            target="_blank"
           >
-            Loading...
-          </ClientForm>
+            Go to Form
+          </a>
         </ClientFormContainer>
       </ClientFormWrapper>
     </Layout>

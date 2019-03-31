@@ -24,6 +24,7 @@ import { RightIcon } from '../components/styles/IconStyles'
 
 const ExampleWrapper = styled.div`
   width: 100%;
+  margin-bottom: ${props => props.theme.textSpace};
   background: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -92,6 +93,10 @@ const OurWebsitesPage = ({ location }) => (
         <ExampleTwoImage />
         <ExampleThreeImage />
       </ExampleWrapper>
+      <ProblemLink to="/websites/examples">
+        Examples of our websites
+        <RightIcon />
+      </ProblemLink>
       <PackageWrapper>
         <HowListContainer>
           <HeadingStyle>Hiring someone? Forget about it.</HeadingStyle>

@@ -94,12 +94,12 @@ const ContactForm = () => (
       <input
         type="hidden"
         name="_subject"
-        value="SEOBird Contact Form Submission"
+        value="SiteBird Contact Form Submission"
       />
       <input
         type="hidden"
         name="_after"
-        value="https://www.seo-bird.com/contact-success"
+        value="https://www.site-bird.com/contact-success"
       />
       <input type="hidden" name="_honeypot" value="" />
       <input type="hidden" name="_confirmation" value="Success!" />

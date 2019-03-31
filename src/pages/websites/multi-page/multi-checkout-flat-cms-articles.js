@@ -29,8 +29,8 @@ const MultiCheckoutFlatCMSArticles = ({ location }) => (
         <HowListContainer>
           <HowList>
             <HowListItem>
-              Includes a blog page along with your single page website, this is
-              necessary to rank for more keywords.
+              Includes a blog page along with your website (6 pages total), this
+              is necessary to rank for more keywords.
             </HowListItem>
             <HowListItem>
               4 content articles are included with the blog page. This

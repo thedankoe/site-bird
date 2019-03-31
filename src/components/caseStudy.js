@@ -62,17 +62,6 @@ const ParagraphContainer = styled.div`
   @media ${device.tabletS} {
     text-align: left;
   }
-
-  a {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: ${props => props.theme.tertiary};
-    transition: all ease 0.3s;
-
-    :hover {
-      color: ${props => props.theme.tertiaryLight};
-    }
-  }
 `
 
 const CaseList = styled.ul`
@@ -122,9 +111,6 @@ const CaseStudy = () => (
                 Video for email signups - <span>100% increase</span>
               </li>
             </CaseList>
-            <a href="https://neilpatel.com/blog/100-conversion-optimization-case-studies/">
-              View More
-            </a>
             <CaseParagraph>
               Optimization in all areas increases conversion rates across the
               board. Optimizing your website, or having a website built with

@@ -89,8 +89,8 @@ const ServicesCard = () => (
     <Card>
       <HeadingStyle>Single Page</HeadingStyle>
       <SubHeadingStyle>
-        Perfect for landing pages or full websites. Get the point across and get
-        customers buying.
+        A modern website style with all content beautifully displayed on one
+        page.
       </SubHeadingStyle>
       <CardParagraph>$299 flat fee</CardParagraph>
       <ParagraphStyle>Or</ParagraphStyle>

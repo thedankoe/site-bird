@@ -56,12 +56,11 @@ const BlogContainer = styled.div`
     grid-template-columns: 1fr;
   }
 
-  @media ${device.mobileL} {
-    width: 90%;
+  @media ${device.tabletS} {
+    width: 100%;
+    margin: 0;
   }
 `
-
-const BlogBlock = styled.div``
 
 const BlogImage = styled(Img)`
   margin-bottom: 1rem;
@@ -81,7 +80,7 @@ const BlogSection = () => (
         <HeadingStyle>Growth tips for small businesses</HeadingStyle>
         <BlogContainer>
           {allMarkdownRemark.edges.map(edge => (
-            <BlogBlock key={edge.node.frontmatter.slug}>
+            <div key={edge.node.frontmatter.slug}>
               <BlogImage
                 sizes={
                   edge.node.frontmatter.featuredImage.childImageSharp.sizes
@@ -92,7 +91,7 @@ const BlogSection = () => (
               <BlogLink to={`posts${edge.node.frontmatter.slug}`}>
                 Read More <RightIcon />
               </BlogLink>
-            </BlogBlock>
+            </div>
           ))}
         </BlogContainer>
       </BlogSectionWrapper>
