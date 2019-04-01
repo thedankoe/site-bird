@@ -29,8 +29,8 @@ const theme = {
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    src: url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
-    font-family: Ubuntu, sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-style: normal;
   }
@@ -55,13 +55,13 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-size: 1.6rem;
     line-height: 1.7;
-    font-family: Ubuntu, sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
   a {
-    font-family: Ubuntu, sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
   }
-  button {  font-family: Ubuntu, sans-serif; }
+  button {  font-family: 'Raleway', sans-serif; }
   ::selection {
     color: #fff;
     background: ${props => props.theme.secondaryLight};

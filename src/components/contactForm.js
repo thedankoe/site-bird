@@ -42,7 +42,7 @@ const FormGroup = styled.div`
     border: none;
     border-radius: 3px;
     color: #fff;
-    font-family: Roboto, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.8rem;
 
     @media ${device.tablet} {
@@ -57,7 +57,7 @@ const FormGroup = styled.div`
       outline: none;
     }
     ::placeholder {
-      font-family: Ubuntu, sans-serif;
+      font-family: 'Raleway', sans-serif;
       font-size: 1.8rem;
       color: ${props => props.theme.lightGrey};
     }
