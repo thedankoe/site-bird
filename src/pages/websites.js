@@ -19,12 +19,13 @@ import {
 import ExampleOneImage from '../components/lazy-images/website-example-one'
 import ExampleTwoImage from '../components/lazy-images/website-example-two'
 import ExampleThreeImage from '../components/lazy-images/website-example-three'
+import NatoursExampleOne from '../images/natours-example-one.gif'
+import NatoursExampleTwo from '../images/natours-example-two.gif'
 import { device } from '../components/styles/MediaQueries'
 import { RightIcon } from '../components/styles/IconStyles'
 
 const ExampleWrapper = styled.div`
   width: 100%;
-  margin-bottom: ${props => props.theme.textSpace};
   background: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -32,6 +33,24 @@ const ExampleWrapper = styled.div`
   @media ${device.tabletL} {
     grid-template-columns: 1fr;
   }
+`
+
+const ExampleContainer = styled.div`
+  margin: ${props => props.theme.sectionSpace} 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: ${props => props.theme.textSpace};
+  text-align: left;
+
+  @media ${device.tablet} {
+    grid-template-columns: 1fr;
+  }
+`
+
+const ExampleGif = styled.img`
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: ${props => props.theme.bs};
 `
 
 const OurWebsitesPage = ({ location }) => (
@@ -93,11 +112,39 @@ const OurWebsitesPage = ({ location }) => (
         <ExampleTwoImage />
         <ExampleThreeImage />
       </ExampleWrapper>
-      <ProblemLink to="/websites/examples">
-        Examples of our websites
-        <RightIcon />
-      </ProblemLink>
       <PackageWrapper>
+        <HeadingStyle>Natours</HeadingStyle>
+        <SubHeadingStyle>
+          This is a perfect example of a single page website. Everything the
+          customer needs to know is on the main page. When the navigation links
+          are clicked, the is an animation that takes you to that section of the
+          page.
+        </SubHeadingStyle>
+        <ExampleContainer>
+          <ExampleGif
+            src={NatoursExampleOne}
+            alt="Example of Natours header style"
+          />
+          <div>
+            <SubHeadingStyle>Beautiful Animations</SubHeadingStyle>
+            <ParagraphStyle>
+              Natours believed a modern user interface would attract modern
+              customers, they weren't wrong. The right colors and seamless
+              animations create a great user experience.
+            </ParagraphStyle>
+          </div>
+        </ExampleContainer>
+        <ExampleContainer>
+          <div>
+            <SubHeadingStyle>Conversion Centered Cards</SubHeadingStyle>
+            <ParagraphStyle>
+              Well designed cards convert more, remember the case studies from
+              the home page? Attractive colors, contrast, and of course the
+              right offer go a long way.
+            </ParagraphStyle>
+          </div>
+          <ExampleGif src={NatoursExampleTwo} alt="Example of Natours cards" />
+        </ExampleContainer>
         <HowListContainer>
           <HeadingStyle>Hiring someone? Forget about it.</HeadingStyle>
           <HowList>
