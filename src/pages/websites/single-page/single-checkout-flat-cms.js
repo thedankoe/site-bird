@@ -126,7 +126,7 @@ const SingleCheckoutFlatCMS = ({ location }) => (
         </HowListContainer>
         <CheckoutLinkContainer>
           <ParagraphStyleLight>
-            $200 to add on, <span>$499 total</span>
+            $200 to add on, <span>$699 total</span>
           </ParagraphStyleLight>
           <CheckoutLink to="/websites/single-page/single-checkout-flat-cms-articles">
             Add on CMS
@@ -135,7 +135,7 @@ const SingleCheckoutFlatCMS = ({ location }) => (
             Continue with Purchase
           </CheckoutLink>
           <ParagraphStyleLight>
-            Current total: <span>$299</span>
+            Current total: <span>$499</span>
           </ParagraphStyleLight>
           <ul>
             <li>

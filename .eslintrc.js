@@ -123,5 +123,7 @@ module.exports = {
     "plugins": [
       // "html",
       "prettier"
+      "react"
+      "import"
     ]
   }

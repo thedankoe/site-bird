@@ -62,7 +62,7 @@ const HeadingStyleLight = styled.h2`
   }
 
   @media ${device.laptopL} {
-    width: 95%;
+    width: 100%;
   }
 
   @media ${device.tabletL} {
@@ -125,14 +125,14 @@ const LinkStyle = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all ease 0.3s;
+  transition: all 300ms ease-in-out;
   &:hover {
     box-shadow: ${props => props.theme.bsHover};
     background: ${props => props.theme.secondaryLight};
     transform: translateY(3px);
     svg {
       transform: translateX(0.5rem);
-      transition: all ease 0.3s;
+      transition: all 300ms ease-in-out;
     }
   }
 `

@@ -300,7 +300,7 @@ const SinglePage = ({ location }) => (
             <Card>
               <HeadingStyle>Flat Fee</HeadingStyle>
               <SubHeadingStyle>1 month completion time</SubHeadingStyle>
-              <CardParagraph>$299</CardParagraph>
+              <CardParagraph>$499</CardParagraph>
               <ParagraphStyle>1 month of revisions</ParagraphStyle>
               <CardList>
                 <li>
@@ -328,8 +328,8 @@ const SinglePage = ({ location }) => (
             </Card>
             <Card>
               <HeadingStyle>6 month contract</HeadingStyle>
-              <SubHeadingStyle>1 month completion time</SubHeadingStyle>
-              <CardParagraph>$89/month</CardParagraph>
+              <SubHeadingStyle>2 month completion time</SubHeadingStyle>
+              <CardParagraph>$119/month</CardParagraph>
               <ParagraphStyle>1 month of revisions</ParagraphStyle>
               <CardList>
                 <li>

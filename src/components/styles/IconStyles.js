@@ -69,7 +69,7 @@ const UpIcon = styled(TiArrowSortedUp)`
 const CrossIcon = styled(TiTimes)`
   fill: ${props => props.theme.tertiary};
   margin-right: 0.5rem;
-  font-size: 1.8rem;
+  font-size: 3rem;
 `
 
 const CheckMark = styled(TiInputChecked)`

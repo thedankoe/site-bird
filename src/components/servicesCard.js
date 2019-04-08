@@ -92,9 +92,9 @@ const ServicesCard = () => (
         A modern website style with all content beautifully displayed on one
         page.
       </SubHeadingStyle>
-      <CardParagraph>$299 flat fee</CardParagraph>
+      <CardParagraph>$499 flat fee</CardParagraph>
       <ParagraphStyle>Or</ParagraphStyle>
-      <CardParagraph>$89/month</CardParagraph>
+      <CardParagraph>$119/month</CardParagraph>
       <ParagraphStyle>6 month contract</ParagraphStyle>
       <CardList>
         <li>
@@ -107,8 +107,8 @@ const ServicesCard = () => (
           <div>
             <CheckMark />
           </div>
-          Designed for you business. Includes an email capture input and contact
-          form.
+          Designed for your business. Includes an email capture input and
+          contact form.
         </li>
         <li>
           <div>
@@ -121,8 +121,8 @@ const ServicesCard = () => (
           <div>
             <CheckMark />
           </div>
-          Ability to add on pages at any time after website completion at an
-          affordable price.
+          Ability to add on pages or functionality at any time after website
+          completion at an affordable price.
         </li>
         <li>
           <div>
@@ -155,8 +155,8 @@ const ServicesCard = () => (
           <div>
             <CheckMark />
           </div>
-          Designed for you business. Includes an email capture input and contact
-          form.
+          Designed for your business. Includes an email capture input and
+          contact form.
         </li>
         <li>
           <div>
@@ -169,8 +169,8 @@ const ServicesCard = () => (
           <div>
             <CheckMark />
           </div>
-          Ability to add on pages at any time after website completion at an
-          affordable price.
+          Ability to add on pages or functionality at any time after website
+          completion at an affordable price.
         </li>
         <li>
           <div>

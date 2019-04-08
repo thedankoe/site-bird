@@ -73,9 +73,9 @@ const TestimonialSection = () => (
         <MattressGuruTestimonial />
       </TestimonialImage>
       <TestimonialParagraph>
-        "After reading up on website builders, we are glad we found SiteBird!
-        They delivered a great website that displays our products how we
-        wanted."
+        "After reading up on build your own websites, I found SiteBird. I felt
+        involved and confident throughout the process which I did not expect
+        from buying a website."
         <span>Brittany - Mattress Guru</span>
       </TestimonialParagraph>
     </TestimonialContainer>
@@ -85,7 +85,7 @@ const TestimonialSection = () => (
       </TestimonialImage>
       <TestimonialParagraph>
         "SiteBird optimized our current website. After only a month, our organic
-        search has doubled! We are more than happy with their work."
+        search has doubled! Highly recommended!"
         <span>Skip &amp; Angee - Caveman Printing and Apparel</span>
       </TestimonialParagraph>
     </TestimonialContainer>

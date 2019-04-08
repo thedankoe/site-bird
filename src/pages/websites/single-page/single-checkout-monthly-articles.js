@@ -50,18 +50,18 @@ const SingleCheckoutMonthlyArticles = ({ location }) => (
         </HowListContainer>
         <CheckoutLinkContainer>
           <ParagraphStyleLight>
-            $40/month to add on, <span>$129/month total</span>
+            $40/month to add on, <span>$159/month total</span>
           </ParagraphStyleLight>
           <CheckoutPlan
-            plan="plan_Emzb3KcJuEz3Hn"
+            plan="plan_EqjvHJGco4BmjP"
             buttonText="Checkout With Articles"
           />
           <CheckoutPlan
-            plan="plan_EhiIqdhjb48y4Q"
+            plan="plan_EqjokJ6g13pL7b"
             buttonText="Continue to Checkout"
           />
           <ParagraphStyleLight>
-            Current total: <span>$89/month</span>
+            Current total: <span>$119/month</span>
           </ParagraphStyleLight>
           <ul>
             <li>

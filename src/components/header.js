@@ -41,12 +41,17 @@ const HeaderText = styled.div`
 `
 
 const HeaderHeadingHome = styled.h1`
+  width: 70%;
   font-size: 4.8rem;
   font-weight: 500;
   text-align: left;
   text-transform: capitalize;
   color: #fff;
   text-shadow: ${props => props.theme.ts};
+
+  @media ${device.laptopL} {
+    width: 100%;
+  }
 
   @media ${device.tablet} {
     font-size: 3.5rem;
@@ -126,9 +131,10 @@ const Header = ({ location, headerText, headerSub }) => (
           {location.pathname === '/' ? (
             <HeaderText>
               <HeaderHeadingHome>
-                Fully optimized websites for small businesses
+                Fully optimized websites for small businesses and self employed
+                individuals
                 <HeaderSubHeading>
-                  Never hire anyone for website problems again.
+                  Never hire anyone for website problems and fixes again
                 </HeaderSubHeading>
               </HeaderHeadingHome>
               <HeaderLink to="/#packages">

@@ -7,6 +7,7 @@ import Process from '../components/process'
 import Buy from '../components/buy'
 import BlogSection from '../components/blogSection'
 import TestimonialSection from '../components/testimonials'
+import CostComparison from '../components/priceComparison'
 
 const IndexPage = ({ location }) => (
   <>
@@ -28,7 +29,11 @@ const IndexPage = ({ location }) => (
       <ProblemSolution />
       <Process />
       <TestimonialSection />
-      <Buy />
+      <CostComparison />
+      <Buy
+        buyText="We offer two website packages: a single page website and a multi-page
+        website. Both website styles are beautiful, optimized, and convert."
+      />
       <BlogSection />
     </Layout>
   </>

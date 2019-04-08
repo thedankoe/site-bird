@@ -52,14 +52,11 @@ export const BuySubHeading = styled(SubHeadingStyleLight)`
   margin: 0 auto ${props => props.theme.textSpace} auto;
 `
 
-const Buy = () => (
+const Buy = ({ buyText }) => (
   <BuyWrapper id="packages">
     <BuyContainer>
       <HeadingStyleLight>Get started</HeadingStyleLight>
-      <BuySubHeading>
-        We offer two website packages: a single page website and a multi-page
-        website. Both website styles are beautiful, optimized, and convert.
-      </BuySubHeading>
+      <BuySubHeading>{buyText}</BuySubHeading>
       <ServicesCard />
       <ProblemLink to="/contact">
         Request more information

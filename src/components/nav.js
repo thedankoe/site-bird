@@ -22,7 +22,7 @@ const NavWrapper = styled.div`
 `
 
 const NavContainer = styled.nav`
-  width: 30%;
+  width: 60%;
   margin: 0 3rem 0 auto;
 `
 
@@ -171,6 +171,12 @@ class Nav extends Component {
                 <Link to="/websites">Websites</Link>
               </NavItem>
               <NavItem>
+                <Link to="/websites">Landing Pages</Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/websites">Redesigns</Link>
+              </NavItem>
+              <NavItem>
                 <Link to="/faq">FAQ</Link>
               </NavItem>
               <NavItem>
@@ -196,6 +202,12 @@ class Nav extends Component {
                     <NavToggleList on={on} toggle={toggle}>
                       <NavToggleItem>
                         <Link to="/websites">Websites</Link>
+                      </NavToggleItem>
+                      <NavToggleItem>
+                        <Link to="/websites">Landing Pages</Link>
+                      </NavToggleItem>
+                      <NavToggleItem>
+                        <Link to="/websites">Redesigns</Link>
                       </NavToggleItem>
                       <NavToggleItem>
                         <Link to="/faq">FAQ</Link>

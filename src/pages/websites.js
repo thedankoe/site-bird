@@ -117,8 +117,8 @@ const OurWebsitesPage = ({ location }) => (
         <SubHeadingStyle>
           This is a perfect example of a single page website. Everything the
           customer needs to know is on the main page. When the navigation links
-          are clicked, the is an animation that takes you to that section of the
-          page.
+          are clicked, there is an animation that takes you to that section of
+          the page.
         </SubHeadingStyle>
         <ExampleContainer>
           <ExampleGif

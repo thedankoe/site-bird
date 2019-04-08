@@ -72,6 +72,15 @@ const WrapperBlue = styled.div`
   padding: ${props => props.theme.textSpace} 0;
   background-image: url(${PrismTexture});
   color: #fff;
+
+  h2 {
+    @media ${device.laptopL} {
+      text-align: center;
+      :after {
+        margin: 1.5rem auto 0 auto;
+      }
+    }
+  }
 `
 
 const ProbContainerBlue = styled.div`

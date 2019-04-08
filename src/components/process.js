@@ -91,7 +91,7 @@ const Process = () => (
           <ProcessListIcon />
         </div>
         <ProcessListItem>
-          Step 1
+          We gather necessary information
           <span>
             A package is purchased, you will be redirected to a form to give us
             information on your business. You will be emailed a contract to
@@ -104,11 +104,12 @@ const Process = () => (
           <ProcessListIcon />
         </div>
         <ProcessListItem>
-          Step 2
+          Strategy and prototyping
           <span>
-            The first week is spent getting all of the information we need on
-            your business. We do this through Slack or email, we want the
-            content on your site to be perfect.
+            The first week is spent researching competitors, keywords, and
+            conversion practices for your industry. We prototype the layout
+            along the way. Any other vital information will be gathered at this
+            time.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -117,11 +118,11 @@ const Process = () => (
           <ProcessListIcon />
         </div>
         <ProcessListItem>
-          Step 3
+          Execution
           <span>
             We start building, a temporary link will be available 3 weeks after
-            purchase. Questions, concerns, and revisions are taken care of for 1
-            month after the website is finished.
+            purchase. Questions, concerns, and revisions are taken care of for a
+            1 month period after the website is finished.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -130,11 +131,11 @@ const Process = () => (
           <ProcessListIcon />
         </div>
         <ProcessListItem>
-          Step 4
+          Base completion
           <span>
-            Single page sites are completed in a month, multi page sites in 2
-            months. We handle revisions, updates, and fixes for 1 month after
-            completion.
+            After the completion of the site, we implement any custom
+            functionality that you purchased after your original purchase. We
+            offer guidance on this.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
@@ -143,11 +144,12 @@ const Process = () => (
           <ProcessListIcon />
         </div>
         <ProcessListItem>
-          Step 5
+          Retainer updates and revisions
           <span>
             If you love your website (we know you will), we offer a retainer
             service for website revisions and updates. This will be offered
-            after all of the original work is done.
+            after all of the original work is done. This is often times
+            unnecessary, we offer transparent guidance.
           </span>
         </ProcessListItem>
       </ProcessListContainer>
