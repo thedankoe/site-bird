@@ -173,7 +173,7 @@ const OurWebsitesPage = ({ location }) => (
           </HowList>
         </HowListContainer>
       </PackageWrapper>
-      <Buy location={location} />
+      <Buy services />
     </Layout>
   </>
 )

@@ -18,8 +18,8 @@ const HeaderWrapper = styled.header`
   overflow: hidden;
   background-image: linear-gradient(
       to right bottom,
-      rgba(61, 61, 61, 0.9),
-      rgba(38, 38, 38, 0.9)
+      rgba(74, 116, 201, 0.9),
+      rgba(70, 150, 229, 0.9)
     ),
     url(${HeaderImg});
   background-position: center;
@@ -74,12 +74,13 @@ const HeaderHeading = styled.h1`
   text-align: left;
   text-transform: capitalize;
   color: #fff;
+  text-shadow: ${props => props.theme.ts};
   :after {
     content: '';
     height: 1px;
     width: 150px;
     margin: 1.5rem 0 0 auto;
-    background: ${props => props.theme.secondaryLight};
+    background: #fff;
     display: block;
 
     @media ${device.tablet} {

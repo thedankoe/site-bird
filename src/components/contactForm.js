@@ -73,7 +73,7 @@ const FormButton = styled.button`
   font-size: 1.8rem;
   color: #fff;
   border: none;
-  border-radius: 3px;
+  border-radius: 3rem;
   box-shadow: ${props => props.theme.bs};
   transition: all ease 0.3s;
   :hover {

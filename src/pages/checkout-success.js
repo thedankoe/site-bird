@@ -13,7 +13,12 @@ import {
 
 export const ClientFormWrapper = styled.div`
   padding: ${props => props.theme.sectionSpace} 0;
-  background-image: url(${SuccessBGDesktop});
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(${SuccessBGDesktop});
   background-position: center;
   background-size: cover;
 

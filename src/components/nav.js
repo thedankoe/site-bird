@@ -171,12 +171,6 @@ class Nav extends Component {
                 <Link to="/websites">Websites</Link>
               </NavItem>
               <NavItem>
-                <Link to="/websites">Landing Pages</Link>
-              </NavItem>
-              <NavItem>
-                <Link to="/websites">Redesigns</Link>
-              </NavItem>
-              <NavItem>
                 <Link to="/faq">FAQ</Link>
               </NavItem>
               <NavItem>

@@ -72,19 +72,19 @@ const InfoBlock = styled.div`
 `
 
 const LayoutIcon = styled(TiDeviceLaptop)`
-  fill: ${props => props.theme.secondaryLight};
+  fill: #fff;
   font-size: 7rem;
   animation: ${growAnimation} 2s infinite;
 `
 
 const CopywritingIcon = styled(TiPencil)`
-  fill: ${props => props.theme.secondaryLight};
+  fill: #fff;
   font-size: 7rem;
   animation: ${swayAnimation} 2s infinite;
 `
 
 const OptimizationIcon = styled(GoGear)`
-  fill: ${props => props.theme.secondaryLight};
+  fill: #fff;
   font-size: 7rem;
   animation: ${spinAnimation} 3s infinite;
 `

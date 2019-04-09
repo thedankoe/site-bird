@@ -10,14 +10,14 @@ module.exports = {
       "ecmaFeatures": {
         "experimentalObjectRestSpread": true,
         "impliedStrict": true,
-        "classes": true
+        "classes": true,
       }
     },
     "env": {
       "browser": true,
       "node": true,
       "jquery": true,
-      "jest": true
+      "jest": true,
     },
     "rules": {
       "no-debugger": 0,
@@ -90,7 +90,7 @@ module.exports = {
             "done",
             "next",
             "err",
-            "error"
+            "error",
           ]
         }
       ],
@@ -122,8 +122,8 @@ module.exports = {
     },
     "plugins": [
       // "html",
-      "prettier"
-      "react"
-      "import"
+      "prettier",
+      "react",
+      "import",
     ]
   }

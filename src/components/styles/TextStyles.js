@@ -50,7 +50,7 @@ const HeadingStyleLight = styled.h2`
     height: 1px;
     width: 150px;
     margin: 1.5rem auto 0 auto;
-    background: ${props => props.theme.secondaryLight};
+    background: #fff;
     display: block;
 
     @media ${device.tabletS} {
@@ -117,7 +117,7 @@ const LinkStyle = styled(Link)`
   width: 15rem;
   margin: 0 auto;
   background: ${props => props.theme.secondary};
-  border-radius: 5px;
+  border-radius: 3rem;
   box-shadow: ${props => props.theme.bs};
   font-size: 1.8rem;
   font-weight: 500;
@@ -165,10 +165,10 @@ const ColoredLink = styled(Link)`
 const HeaderLinkStyle = styled(LinkStyle)`
   margin: 0;
   padding: 1rem;
-  background: ${props => props.theme.secondary};
+  background: ${props => props.theme.tertiary};
   transform: translateY(1.5rem);
   &:hover {
-    background: ${props => props.theme.secondaryLight};
+    background: ${props => props.theme.tertiaryLight};
     transform: translateY(1.8rem);
     svg {
       transform: translateX(0);
@@ -185,7 +185,7 @@ const CheckoutButton = styled.button`
   font-size: 2.2rem;
   font-weight: 500;
   border: none;
-  border-radius: 3px;
+  border-radius: 3rem;
   box-shadow: ${props => props.theme.bs};
   cursor: pointer;
   transition: all ease 0.3s;
@@ -207,7 +207,7 @@ const CheckoutLink = styled(Link)`
   font-weight: 500;
   text-align: center;
   border: none;
-  border-radius: 3px;
+  border-radius: 3rem;
   box-shadow: ${props => props.theme.bs};
   transition: all ease 0.3s;
   :hover {
@@ -220,7 +220,7 @@ const CheckoutLink = styled(Link)`
 const SecondaryLinkStyle = styled(LinkStyle)`
   margin: 1rem 0 0 0;
   background: ${props => props.theme.secondary};
-  border-radius: 5px;
+  border-radius: 3rem;
   &:hover {
     background: ${props => props.theme.secondaryLight};
     transform: translateY(3px);

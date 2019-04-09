@@ -5,12 +5,11 @@ import {
   ProblemLink,
   HeadingStyleLight,
   SubHeadingStyleLight,
-  ParagraphStyleLight,
-  ColoredLink,
 } from './styles/TextStyles'
 import ServicesCard from './servicesCard'
 import { RightIcon } from './styles/IconStyles'
 import PrismTexture from '../images/prism-texture.png'
+import LandingPageCard from './landingPageCard'
 
 export const BuyWrapper = styled.div`
   padding: ${props => props.theme.textSpace};
@@ -52,12 +51,12 @@ export const BuySubHeading = styled(SubHeadingStyleLight)`
   margin: 0 auto ${props => props.theme.textSpace} auto;
 `
 
-const Buy = ({ buyText }) => (
+const Buy = ({ buyText, services }) => (
   <BuyWrapper id="packages">
     <BuyContainer>
       <HeadingStyleLight>Get started</HeadingStyleLight>
       <BuySubHeading>{buyText}</BuySubHeading>
-      <ServicesCard />
+      {services ? <ServicesCard /> : <LandingPageCard />}
       <ProblemLink to="/contact">
         Request more information
         <RightIcon />

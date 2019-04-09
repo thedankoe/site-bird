@@ -33,6 +33,7 @@ const IndexPage = ({ location }) => (
       <Buy
         buyText="We offer two website packages: a single page website and a multi-page
         website. Both website styles are beautiful, optimized, and convert."
+        services
       />
       <BlogSection />
     </Layout>

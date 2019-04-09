@@ -7,12 +7,12 @@ import Footer from './footer'
 import { device } from './styles/MediaQueries'
 
 const theme = {
-  primary: '#262626',
-  primaryLight: '#3D3D3D',
-  secondary: '#4a74c9',
-  secondaryLight: '#4696e5',
-  tertiary: '#ff392e',
-  tertiaryLight: '#ff5148',
+  primary: '#262626', // rgba(38, 38, 38, 0.0);
+  primaryLight: '#3D3D3D', // rgba(61, 61, 61, 0.0);
+  secondary: '#4a74c9', // rgba(74, 116, 201, 0.0);
+  secondaryLight: '#4696e5', // rgba(70, 150, 229, 0.0);
+  tertiary: '#ff5148',
+  tertiaryLight: '#ff392e', // rgba(255, 57, 46, 0.0);
   black: '#004040',
   grey: '#333',
   lightGrey: '#DDD',
@@ -64,7 +64,7 @@ const GlobalStyle = createGlobalStyle`
   button {  font-family: 'Raleway', sans-serif; }
   ::selection {
     color: #fff;
-    background: ${props => props.theme.secondaryLight};
+    background: ${props => props.theme.primary};
   }
 `
 
